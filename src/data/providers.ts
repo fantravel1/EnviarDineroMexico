@@ -374,6 +374,478 @@ export const providers: Provider[] = [
 
     lastUpdated: '2025-12-16',
   },
+  {
+    id: 'wise',
+    name: 'Wise',
+    slug: 'wise',
+    tagline: 'Tipo de cambio real sin margen oculto',
+    description: 'Wise (antes TransferWise) ofrece el tipo de cambio medio del mercado real sin margen oculto. Cobra una comisión transparente que muestra exactamente cuánto pagas. Ideal para transparencia total.',
+    website: 'https://wise.com',
+    affiliateUrl: 'https://wise.com/invite',
+    hasAffiliateProgram: true,
+
+    fees: {
+      bankDeposit: '$1.50-4.50 (variable)',
+      cashPickup: 'No disponible',
+      exchangeRateMarkup: '0% (tipo de cambio real)',
+      freeThreshold: 'N/A - siempre cobra comisión transparente',
+    },
+
+    costExamples: [
+      { amount: 200, fee: 2.80, exchangeLoss: 0, totalCost: 2.80, percentage: 1.4 },
+      { amount: 500, fee: 4.12, exchangeLoss: 0, totalCost: 4.12, percentage: 0.82 },
+      { amount: 1000, fee: 7.12, exchangeLoss: 0, totalCost: 7.12, percentage: 0.71 },
+    ],
+
+    delivery: {
+      speed: '1-2 días hábiles',
+      bankDeposit: '24-48 horas',
+      cashPickup: 'No disponible',
+    },
+
+    coverage: {
+      cashPickupLocations: 'No disponible',
+      banks: ['BBVA Bancomer', 'Banorte', 'Santander', 'HSBC', 'Scotiabank', 'Banamex'],
+      cashPickupNetworks: [],
+    },
+
+    platform: {
+      type: 'web-first',
+      iosRating: 4.7,
+      androidRating: 4.5,
+      trustpilotRating: 4.3,
+      totalReviews: '200,000+',
+      appDownloadRequired: false,
+    },
+
+    limits: {
+      daily: 'Hasta $1,000,000',
+      monthly: 'Sin límite con verificación',
+      perTransfer: 'Hasta $1,000,000',
+      verificationRequired: 'Identificación y comprobante de domicilio',
+    },
+
+    paymentMethods: {
+      debitCard: true,
+      creditCard: true,
+      bankAccount: true,
+      cash: false,
+      applePay: true,
+      googlePay: true,
+    },
+
+    bestFor: [
+      'Montos grandes ($1,000+)',
+      'Usuarios que valoran transparencia',
+      'Transferencias a cuenta bancaria',
+      'Freelancers y nómadas digitales',
+    ],
+
+    limitations: [
+      'Sin cobro en efectivo',
+      'Más lento que otros proveedores',
+      'Comisión variable puede ser alta en montos pequeños',
+    ],
+
+    ratings: {
+      overall: 4.4,
+      fees: 4.8,
+      speed: 3.5,
+      coverage: 3.0,
+      ease: 4.5,
+    },
+
+    uniqueFeatures: [
+      'Tipo de cambio medio real (sin margen)',
+      'Tarjeta multimoneda disponible',
+      'Cuenta multi-divisa',
+      'Transparencia total en costos',
+      'Empresa pública (LON: WISE)',
+      'Calculadora de costos en tiempo real',
+    ],
+
+    lastUpdated: '2025-12-16',
+  },
+  {
+    id: 'western-union',
+    name: 'Western Union',
+    slug: 'western-union',
+    tagline: 'La red más grande con 150+ años de historia',
+    description: 'Western Union es el gigante histórico de las remesas con la red de agentes más extensa del mundo. Ofrece múltiples opciones de envío y recepción, pero generalmente con costos más altos.',
+    website: 'https://www.westernunion.com',
+    affiliateUrl: 'https://www.westernunion.com/us/en/home.html',
+    hasAffiliateProgram: true,
+
+    fees: {
+      bankDeposit: '$0-4.99',
+      cashPickup: '$4.99-12.99',
+      exchangeRateMarkup: '~2.5-4% sobre tasa media',
+      freeThreshold: 'Promociones ocasionales',
+    },
+
+    costExamples: [
+      { amount: 200, fee: 4.99, exchangeLoss: 7, totalCost: 12, percentage: 6 },
+      { amount: 500, fee: 4.99, exchangeLoss: 17.50, totalCost: 22.50, percentage: 4.5 },
+      { amount: 1000, fee: 8.99, exchangeLoss: 35, totalCost: 44, percentage: 4.4 },
+    ],
+
+    delivery: {
+      speed: 'Minutos a 5 días',
+      bankDeposit: '1-3 días hábiles',
+      cashPickup: 'Minutos',
+      mobileWallet: 'Minutos',
+    },
+
+    coverage: {
+      cashPickupLocations: '500,000+',
+      banks: ['BBVA Bancomer', 'Banorte', 'Santander', 'HSBC', 'Banamex', 'Banco Azteca'],
+      mobileWallets: ['Mercado Pago'],
+      cashPickupNetworks: ['Elektra (49,000+)', 'Oxxo', 'Walmart', 'Telecomm', 'Farmacias Guadalajara', 'Coppel', 'Chedraui'],
+    },
+
+    platform: {
+      type: 'web-first',
+      iosRating: 4.6,
+      androidRating: 4.3,
+      trustpilotRating: 3.2,
+      totalReviews: '35,000+',
+      appDownloadRequired: false,
+    },
+
+    limits: {
+      daily: '$5,000 (online)',
+      monthly: '$10,000 (online)',
+      perTransfer: '$7,999 (online), $50,000 (agente)',
+      verificationRequired: 'ID para montos mayores',
+    },
+
+    paymentMethods: {
+      debitCard: true,
+      creditCard: true,
+      bankAccount: true,
+      cash: true,
+      applePay: false,
+      googlePay: false,
+    },
+
+    bestFor: [
+      'Cobro en efectivo inmediato',
+      'Envío desde ubicaciones físicas',
+      'Usuarios que prefieren marcas conocidas',
+      'Áreas rurales de México',
+    ],
+
+    limitations: [
+      'Costos más altos que competidores digitales',
+      'Tipo de cambio menos favorable',
+      'Calificaciones mixtas en Trustpilot',
+      'Comisiones variables y confusas',
+    ],
+
+    ratings: {
+      overall: 3.5,
+      fees: 2.5,
+      speed: 4.0,
+      coverage: 5.0,
+      ease: 3.5,
+    },
+
+    uniqueFeatures: [
+      'Red de agentes más grande del mundo',
+      '150+ años de experiencia',
+      'Envío en persona disponible',
+      'Entrega a billeteras móviles',
+      'Servicio 24/7',
+      'Garantía de satisfacción',
+    ],
+
+    lastUpdated: '2025-12-16',
+  },
+  {
+    id: 'xoom',
+    name: 'Xoom (PayPal)',
+    slug: 'xoom',
+    tagline: 'Respaldado por PayPal, confiabilidad garantizada',
+    description: 'Xoom es el servicio de remesas de PayPal, ofreciendo la confiabilidad de una marca global con múltiples opciones de entrega incluyendo recarga de celulares.',
+    website: 'https://www.xoom.com',
+    affiliateUrl: 'https://www.xoom.com',
+    hasAffiliateProgram: true,
+
+    fees: {
+      bankDeposit: '$0-4.99',
+      cashPickup: '$4.99',
+      mobileWallet: '$2.99',
+      creditCardSurcharge: '+2.9%',
+      exchangeRateMarkup: '~2-3% sobre tasa media',
+      freeThreshold: 'Sin comisión enviando desde cuenta bancaria',
+    },
+
+    costExamples: [
+      { amount: 200, fee: 0, exchangeLoss: 5, totalCost: 5, percentage: 2.5 },
+      { amount: 500, fee: 0, exchangeLoss: 12.50, totalCost: 12.50, percentage: 2.5 },
+      { amount: 1000, fee: 0, exchangeLoss: 25, totalCost: 25, percentage: 2.5 },
+    ],
+
+    delivery: {
+      speed: 'Minutos a 4 días',
+      bankDeposit: 'Minutos (con tarjeta)',
+      cashPickup: 'Minutos',
+      mobileWallet: 'Minutos',
+    },
+
+    coverage: {
+      cashPickupLocations: '60,000+',
+      banks: ['BBVA Bancomer', 'Banorte', 'Santander', 'HSBC', 'Scotiabank', 'Banamex'],
+      mobileWallets: ['Mercado Pago'],
+      cashPickupNetworks: ['OXXO', 'Elektra', 'Walmart', '7-Eleven', 'Coppel', 'Farmacias Guadalajara'],
+    },
+
+    platform: {
+      type: 'mobile-first',
+      iosRating: 4.8,
+      androidRating: 4.6,
+      trustpilotRating: 4.1,
+      totalReviews: '25,000+',
+      appDownloadRequired: false,
+    },
+
+    limits: {
+      daily: '$2,999 (con tarjeta)',
+      monthly: '$10,000',
+      perTransfer: 'Hasta $10,000',
+      verificationRequired: 'Cuenta PayPal verificada',
+    },
+
+    paymentMethods: {
+      debitCard: true,
+      creditCard: true,
+      bankAccount: true,
+      cash: false,
+      applePay: false,
+      googlePay: false,
+    },
+
+    bestFor: [
+      'Usuarios de PayPal existentes',
+      'Recarga de celulares en México',
+      'Envíos desde cuenta bancaria (sin comisión)',
+      'Múltiples opciones de entrega',
+    ],
+
+    limitations: [
+      'Tipo de cambio menos competitivo',
+      'Tarjeta de crédito tiene recargo',
+      'Requiere cuenta PayPal',
+    ],
+
+    ratings: {
+      overall: 4.0,
+      fees: 3.5,
+      speed: 4.5,
+      coverage: 4.0,
+      ease: 4.5,
+    },
+
+    uniqueFeatures: [
+      'Parte de PayPal',
+      'Recarga de celulares disponible',
+      'Sin comisión desde cuenta bancaria',
+      'Integración con cuenta PayPal',
+      'Pago de servicios en México',
+      'Tracking en tiempo real',
+    ],
+
+    lastUpdated: '2025-12-16',
+  },
+  {
+    id: 'moneygram',
+    name: 'MoneyGram',
+    slug: 'moneygram',
+    tagline: 'Red global con opciones digitales modernas',
+    description: 'MoneyGram combina su extensa red física con servicios digitales modernos. Ofrece diversas opciones de envío y recepción con precios competitivos.',
+    website: 'https://www.moneygram.com',
+    affiliateUrl: 'https://www.moneygram.com',
+    hasAffiliateProgram: true,
+
+    fees: {
+      bankDeposit: '$1.99',
+      cashPickup: '$1.99-4.99',
+      exchangeRateMarkup: '~2-3% sobre tasa media',
+      freeThreshold: 'Promociones frecuentes',
+    },
+
+    costExamples: [
+      { amount: 200, fee: 1.99, exchangeLoss: 5, totalCost: 7, percentage: 3.5 },
+      { amount: 500, fee: 1.99, exchangeLoss: 12.50, totalCost: 14.50, percentage: 2.9 },
+      { amount: 1000, fee: 1.99, exchangeLoss: 25, totalCost: 27, percentage: 2.7 },
+    ],
+
+    delivery: {
+      speed: 'Minutos a 3 días',
+      bankDeposit: '1-3 días hábiles',
+      cashPickup: 'Minutos',
+      mobileWallet: 'Minutos',
+    },
+
+    coverage: {
+      cashPickupLocations: '350,000+',
+      banks: ['BBVA Bancomer', 'Banorte', 'Santander', 'Banamex'],
+      mobileWallets: ['Mercado Pago'],
+      cashPickupNetworks: ['Walmart (4,500+)', 'OXXO', 'Elektra', 'Coppel', 'Farmacias Guadalajara', 'Telecomm'],
+    },
+
+    platform: {
+      type: 'mobile-first',
+      iosRating: 4.7,
+      androidRating: 4.5,
+      trustpilotRating: 3.8,
+      totalReviews: '20,000+',
+      appDownloadRequired: false,
+    },
+
+    limits: {
+      daily: '$10,000',
+      monthly: '$10,000',
+      perTransfer: '$10,000',
+      verificationRequired: 'ID para verificación',
+    },
+
+    paymentMethods: {
+      debitCard: true,
+      creditCard: true,
+      bankAccount: true,
+      cash: true,
+      applePay: false,
+      googlePay: false,
+    },
+
+    bestFor: [
+      'Envío y recepción en Walmart',
+      'Precios competitivos',
+      'Flexibilidad de envío (online y en persona)',
+      'Entrega a billeteras móviles',
+    ],
+
+    limitations: [
+      'Tipo de cambio puede variar mucho',
+      'Experiencia inconsistente en agentes',
+      'Verificación puede demorar',
+    ],
+
+    ratings: {
+      overall: 3.8,
+      fees: 3.5,
+      speed: 4.0,
+      coverage: 4.5,
+      ease: 4.0,
+    },
+
+    uniqueFeatures: [
+      'Red Walmart extensa',
+      'Opción de envío en persona',
+      'MoneyGram Plus Rewards',
+      'Recarga de celulares',
+      'Pago de facturas',
+      'Soporte multilingüe',
+    ],
+
+    lastUpdated: '2025-12-16',
+  },
+  {
+    id: 'worldremit',
+    name: 'WorldRemit',
+    slug: 'worldremit',
+    tagline: 'Más de 150 países, comisiones bajas',
+    description: 'WorldRemit ofrece transferencias digitales a más de 150 países con comisiones competitivas y múltiples opciones de entrega incluyendo recarga de airtime.',
+    website: 'https://www.worldremit.com',
+    affiliateUrl: 'https://www.worldremit.com/en/refer-a-friend',
+    hasAffiliateProgram: true,
+
+    fees: {
+      bankDeposit: '$2.99',
+      cashPickup: '$3.99',
+      mobileWallet: '$2.99',
+      exchangeRateMarkup: '~1.5-2% sobre tasa media',
+      freeThreshold: 'Primera transferencia gratis (promocional)',
+    },
+
+    costExamples: [
+      { amount: 200, fee: 2.99, exchangeLoss: 3.50, totalCost: 6.50, percentage: 3.25 },
+      { amount: 500, fee: 2.99, exchangeLoss: 8.75, totalCost: 11.75, percentage: 2.35 },
+      { amount: 1000, fee: 2.99, exchangeLoss: 17.50, totalCost: 20.50, percentage: 2.05 },
+    ],
+
+    delivery: {
+      speed: 'Minutos a 3 días',
+      bankDeposit: '1-3 días hábiles',
+      cashPickup: 'Minutos',
+      mobileWallet: 'Minutos',
+    },
+
+    coverage: {
+      cashPickupLocations: '60,000+',
+      banks: ['BBVA Bancomer', 'Banorte', 'Santander', 'HSBC', 'Banamex'],
+      mobileWallets: ['Mercado Pago'],
+      cashPickupNetworks: ['OXXO', 'Elektra', 'Walmart', 'Coppel'],
+    },
+
+    platform: {
+      type: 'mobile-first',
+      iosRating: 4.6,
+      androidRating: 4.4,
+      trustpilotRating: 4.0,
+      totalReviews: '100,000+',
+      appDownloadRequired: false,
+    },
+
+    limits: {
+      daily: '$5,000',
+      monthly: '$25,000',
+      perTransfer: '$5,000',
+      verificationRequired: 'ID y comprobante de domicilio',
+    },
+
+    paymentMethods: {
+      debitCard: true,
+      creditCard: true,
+      bankAccount: true,
+      cash: false,
+      applePay: true,
+      googlePay: true,
+    },
+
+    bestFor: [
+      'Envíos internacionales variados',
+      'Recarga de celulares',
+      'Usuarios de Apple/Google Pay',
+      'Costos competitivos',
+    ],
+
+    limitations: [
+      'Red de efectivo limitada vs competidores',
+      'Depósitos bancarios más lentos',
+      'Menos conocido en comunidad mexicana',
+    ],
+
+    ratings: {
+      overall: 4.0,
+      fees: 4.0,
+      speed: 4.0,
+      coverage: 3.5,
+      ease: 4.5,
+    },
+
+    uniqueFeatures: [
+      '150+ países disponibles',
+      'Apple Pay y Google Pay',
+      'Recarga de airtime internacional',
+      'Promoción primera transferencia gratis',
+      'Programa de referidos',
+      'App multilingüe',
+    ],
+
+    lastUpdated: '2025-12-16',
+  },
 ]
 
 export const providersBySlug: Record<string, Provider> = providers.reduce(
