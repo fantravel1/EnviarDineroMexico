@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-800 antialiased;
+  }
+
+  /* Improve text rendering */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Mobile-first touch-friendly buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 min-h-touch
+           bg-trust-blue-600 text-white font-semibold rounded-lg
+           hover:bg-trust-blue-700 active:bg-trust-blue-800
+           transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-trust-blue-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 min-h-touch
+           bg-white text-trust-blue-600 font-semibold rounded-lg
+           border-2 border-trust-blue-600
+           hover:bg-trust-blue-50 active:bg-trust-blue-100
+           transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-trust-blue-500 focus:ring-offset-2;
+  }
+
+  .btn-cta {
+    @apply inline-flex items-center justify-center px-8 py-4 min-h-touch
+           bg-warm-accent-500 text-white font-bold rounded-xl
+           hover:bg-warm-accent-600 active:bg-warm-accent-700
+           transform hover:scale-[1.02] active:scale-[0.98]
+           transition-all duration-200
+           shadow-lg hover:shadow-xl
+           focus:outline-none focus:ring-2 focus:ring-warm-accent-500 focus:ring-offset-2;
+  }
+
+  /* Card component */
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-lg transition-shadow duration-200;
+  }
+
+  /* Affiliate disclosure styling */
+  .affiliate-disclosure {
+    @apply bg-neutral-100 border-l-4 border-trust-blue-600 p-4 rounded-r-lg
+           text-sm text-neutral-600 mb-6;
+  }
+
+  /* Mobile-friendly tables */
+  .table-container {
+    @apply overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0;
+  }
+
+  .comparison-table {
+    @apply w-full min-w-[600px] text-left;
+  }
+
+  .comparison-table th {
+    @apply bg-trust-blue-600 text-white font-semibold p-4 first:rounded-tl-lg last:rounded-tr-lg;
+  }
+
+  .comparison-table td {
+    @apply p-4 border-b border-neutral-200;
+  }
+
+  .comparison-table tr:hover td {
+    @apply bg-neutral-50;
+  }
+
+  /* Provider card */
+  .provider-card {
+    @apply card-hover border-2 border-transparent hover:border-trust-blue-200;
+  }
+
+  /* Featured provider highlight */
+  .featured-provider {
+    @apply relative border-2 border-warm-accent-500;
+  }
+
+  .featured-provider::before {
+    content: 'Recomendado';
+    @apply absolute -top-3 left-4 px-3 py-1
+           bg-warm-accent-500 text-white text-xs font-bold rounded-full;
+  }
+
+  /* Trust badge */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 px-3 py-1.5
+           bg-success-green-50 text-success-green-700
+           text-sm font-medium rounded-full;
+  }
+
+  /* Input styling - mobile optimized */
+  .input-field {
+    @apply w-full px-4 py-3 min-h-touch
+           border-2 border-neutral-300 rounded-lg
+           text-lg
+           focus:border-trust-blue-500 focus:ring-2 focus:ring-trust-blue-200
+           focus:outline-none
+           transition-colors duration-200;
+  }
+
+  .input-field-amount {
+    @apply input-field text-2xl font-bold text-center;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  /* Mexican flag gradient - for decorative use */
+  .mexican-gradient {
+    background: linear-gradient(90deg, #006847 0%, #FFFFFF 50%, #CE1126 100%);
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-trust-blue-600 to-success-green-600;
+  }
+
+  /* Safe area padding for mobile */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* Thumb zone positioning */
+  .thumb-zone {
+    @apply fixed bottom-0 left-0 right-0 safe-bottom;
+  }
+}
