@@ -14,12 +14,13 @@ const footerLinks = {
   recursos: [
     { name: 'Calculadora', href: '/calculadora/' },
     { name: 'Guía Primera Transferencia', href: '/guias/como-enviar-dinero-primera-vez/' },
-    { name: 'Impuestos y Regulaciones', href: '/guias/impuestos-remesas-mexico/' },
+    { name: 'Blog', href: '/blog/' },
   ],
-  empresa: [
-    { name: 'Sobre Nosotros', href: '/about/' },
-    { name: 'Metodología', href: '/about/metodologia/' },
+  legal: [
+    { name: 'Términos de Servicio', href: '/terminos-servicio/' },
+    { name: 'Política de Privacidad', href: '/politica-privacidad/' },
     { name: 'Política Editorial', href: '/about/politica-editorial/' },
+    { name: 'Contacto', href: '/contacto/' },
   ],
 }
 
@@ -80,11 +81,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Empresa */}
+          {/* Legal */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Empresa</h3>
+            <h3 className="font-semibold text-white mb-4">Legal</h3>
             <ul className="space-y-2">
-              {footerLinks.empresa.map((link) => (
+              {footerLinks.legal.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -98,14 +99,24 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Affiliate disclosure */}
+        {/* Legal disclaimer */}
         <div className="mt-12 pt-8 border-t border-neutral-700">
-          <p className="text-xs text-neutral-400 max-w-3xl">
-            <strong>Divulgación:</strong> EnviarDineroMexico.com contiene enlaces de afiliados.
-            Podemos recibir una comisión cuando te registras en servicios a través de nuestros
-            enlaces, sin costo adicional para ti. Esto no afecta nuestra independencia editorial
-            ni metodología de clasificación. Las tarifas y tipos de cambio pueden variar y deben
-            verificarse directamente con cada proveedor antes de realizar una transferencia.
+          <div className="bg-neutral-700/50 rounded-lg p-4 mb-6">
+            <p className="text-sm text-neutral-300">
+              <strong className="text-white">Aviso Legal:</strong> EnviarDineroMexico.com es un sitio
+              informativo de comparación. <strong>NO somos un servicio financiero regulado, banco, ni
+              transmisor de dinero.</strong> No procesamos transferencias. Toda la información es educativa
+              y no constituye asesoramiento financiero. Los costos mostrados son estimaciones que pueden
+              cambiar; verifica siempre con el proveedor antes de enviar dinero.
+            </p>
+          </div>
+          <p className="text-sm text-neutral-400 max-w-3xl">
+            <strong>Divulgación de Afiliados:</strong> Este sitio contiene enlaces de afiliados.
+            Podemos recibir una comisión cuando te registras a través de nuestros enlaces, sin costo
+            adicional para ti. Esto no afecta nuestra independencia editorial.
+            <Link href="/about/politica-editorial/" className="underline hover:text-white ml-1">
+              Ver política completa
+            </Link>
           </p>
         </div>
       </div>
@@ -116,9 +127,10 @@ export function Footer() {
           <p className="text-xs text-neutral-500">
             © 2025 EnviarDineroMexico.com. Todos los derechos reservados.
           </p>
-          <p className="text-xs text-neutral-500">
-            Última actualización: Diciembre 2025
-          </p>
+          <div className="flex gap-4 text-xs text-neutral-500">
+            <Link href="/terminos-servicio/" className="hover:text-neutral-300">Términos</Link>
+            <Link href="/politica-privacidad/" className="hover:text-neutral-300">Privacidad</Link>
+          </div>
         </div>
       </div>
     </footer>

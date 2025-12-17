@@ -5,7 +5,7 @@ import { ComparisonTable, AffiliateDisclosure } from '@/components'
 export const metadata: Metadata = {
   title: 'Comparar Servicios de Remesas a México | Todas las Opciones',
   description:
-    'Compara Remitly vs Western Union, Sendwave vs Remitly, Félix Pago y más. Encuentra el servicio más barato para enviar dinero a México.',
+    'Compara Remitly vs Western Union, Sendwave vs Remitly, Félix Pago y más. Encuentra el servicio adecuado según tu monto y necesidades.',
 }
 
 const comparisons = [

@@ -90,9 +90,14 @@ export function ComparisonTable({
         </tbody>
       </table>
 
-      <p className="text-xs text-neutral-500 mt-4">
-        * Los costos incluyen comisión + diferencia en tipo de cambio. Los valores son aproximados y pueden variar.
-      </p>
+      <div className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+        <p className="text-sm text-yellow-800">
+          <strong>Aviso importante:</strong> Los costos mostrados son <strong>estimaciones aproximadas</strong> basadas
+          en información pública. Incluyen comisión + diferencia en tipo de cambio. Las tarifas y tipos de cambio
+          cambian constantemente. <strong>Verifica siempre los precios actuales directamente con el proveedor
+          antes de realizar tu transferencia.</strong>
+        </p>
+      </div>
     </div>
   )
 }
