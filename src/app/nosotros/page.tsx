@@ -10,6 +10,45 @@ export const metadata: Metadata = {
 export default function NosotrosPage() {
   return (
     <>
+      {/* AboutPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'AboutPage',
+            name: 'Sobre EnviarDineroMexico',
+            description: 'Conoce nuestra misión: ayudar a la comunidad mexicana en EE.UU. a enviar dinero a México de forma más económica y segura.',
+            url: 'https://enviardineromexico.com/nosotros/',
+            mainEntity: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+              description: 'Sitio de comparación independiente para servicios de remesas a México.',
+              foundingDate: '2025',
+              areaServed: {
+                '@type': 'Country',
+                name: 'Mexico',
+              },
+              serviceType: 'Comparación de servicios de remesas',
+            },
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Sobre Nosotros', item: 'https://enviardineromexico.com/nosotros/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
         <div className="container-wide">
           <nav className="text-sm mb-6">

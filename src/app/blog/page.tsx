@@ -37,6 +37,42 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
+      {/* CollectionPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Blog de Remesas a México',
+            description: 'Últimas noticias, consejos y actualizaciones sobre envío de dinero a México.',
+            url: 'https://enviardineromexico.com/blog/',
+            mainEntity: {
+              '@type': 'ItemList',
+              itemListElement: posts.map((post, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                url: `https://enviardineromexico.com/blog/${post.slug}/`,
+                name: post.title,
+              })),
+            },
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://enviardineromexico.com/blog/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
         <div className="container-wide">
           <nav className="text-sm mb-6">

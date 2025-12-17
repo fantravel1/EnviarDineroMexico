@@ -10,6 +10,80 @@ export const metadata: Metadata = {
 export default function ContactoPage() {
   return (
     <>
+      {/* ContactPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ContactPage',
+            name: 'Contacto - EnviarDineroMexico',
+            description: 'Contáctanos para preguntas sobre comparación de servicios de remesas a México.',
+            mainEntity: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+              email: 'hola@enviardineroamexico.com',
+              contactPoint: {
+                '@type': 'ContactPoint',
+                email: 'hola@enviardineroamexico.com',
+                contactType: 'customer service',
+                availableLanguage: ['Spanish', 'English'],
+              },
+            },
+          }),
+        }}
+      />
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Ofrecen servicio de envío de dinero?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Somos un sitio de comparación independiente. No enviamos dinero ni procesamos transacciones. Comparamos servicios de terceros para ayudarte a elegir la mejor opción.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cómo ganan dinero?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Recibimos comisiones de algunos proveedores cuando usas nuestros enlaces. Esto no afecta nuestras reseñas ni el precio que pagas. Siempre mostramos todos los costos de forma transparente.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Puedo sugerir un servicio para incluir?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: '¡Sí! Si conoces un servicio de remesas que deberíamos incluir, envíanos un correo con los detalles y lo evaluaremos.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Contacto', item: 'https://enviardineromexico.com/contacto/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
         <div className="container-wide">
           <nav className="text-sm mb-6">
@@ -47,6 +121,7 @@ export default function ContactoPage() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
@@ -79,6 +154,7 @@ export default function ContactoPage() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
@@ -111,6 +187,7 @@ export default function ContactoPage() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"

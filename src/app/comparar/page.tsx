@@ -29,6 +29,42 @@ const comparisons = [
 export default function CompararPage() {
   return (
     <>
+      {/* CollectionPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Comparar Servicios de Remesas a México',
+            description: 'Comparaciones detalladas de servicios para enviar dinero a México. Remitly vs Western Union, Sendwave vs Remitly y más.',
+            url: 'https://enviardineromexico.com/comparar/',
+            mainEntity: {
+              '@type': 'ItemList',
+              itemListElement: comparisons.map((comparison, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                url: `https://enviardineromexico.com/comparar/${comparison.slug}/`,
+                name: comparison.title,
+              })),
+            },
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Comparar', item: 'https://enviardineromexico.com/comparar/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
         <div className="container-wide">
           <nav className="text-sm mb-6">

@@ -12,6 +12,42 @@ export const metadata: Metadata = {
 export default function ReviewsPage() {
   return (
     <>
+      {/* CollectionPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Reviews de Servicios de Remesas a México',
+            description: 'Reviews detallados de Remitly, Sendwave, Félix Pago y más servicios para enviar dinero a México.',
+            url: 'https://enviardineromexico.com/reviews/',
+            mainEntity: {
+              '@type': 'ItemList',
+              itemListElement: providers.map((provider, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                url: `https://enviardineromexico.com/reviews/${provider.id}/`,
+                name: `${provider.name} Review`,
+              })),
+            },
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Reviews', item: 'https://enviardineromexico.com/reviews/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
         <div className="container-wide">
           <nav className="text-sm mb-6">
