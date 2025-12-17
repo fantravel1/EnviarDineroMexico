@@ -11,6 +11,49 @@ export const metadata: Metadata = {
 export default function CalculadoraPage() {
   return (
     <>
+      {/* SoftwareApplication Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Calculadora de Remesas a México',
+            applicationCategory: 'FinanceApplication',
+            operatingSystem: 'Web',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+            },
+            description: 'Compara cuánto cuesta enviar dinero a México con diferentes proveedores. Calcula comisiones y tipo de cambio en tiempo real.',
+            featureList: [
+              'Comparación de múltiples proveedores',
+              'Cálculo de comisiones y tipo de cambio',
+              'Recomendación personalizada por monto',
+            ],
+            author: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Calculadora', item: 'https://enviardineromexico.com/calculadora/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-12">
         <div className="container-wide">
           <nav className="text-sm mb-6">

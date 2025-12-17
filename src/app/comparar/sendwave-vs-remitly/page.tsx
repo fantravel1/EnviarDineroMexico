@@ -98,6 +98,22 @@ export default function SendwaveVsRemitlyPage() {
             </div>
           </div>
 
+          {/* Full Reviews Links */}
+          <div className="bg-neutral-50 p-6 rounded-lg mb-8">
+            <h3 className="font-bold text-neutral-800 mb-4">Reviews Completos</h3>
+            <p className="text-neutral-600 mb-4">
+              Lee nuestras reseñas detalladas de cada servicio:
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/reviews/sendwave/" className="text-trust-blue-600 hover:underline font-medium">
+                → Review de Sendwave
+              </Link>
+              <Link href="/reviews/remitly/" className="text-success-green-600 hover:underline font-medium">
+                → Review de Remitly
+              </Link>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-6">
             <a
               href="https://www.sendwave.com"

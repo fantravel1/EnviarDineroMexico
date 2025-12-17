@@ -10,6 +10,40 @@ export const metadata: Metadata = {
 export default function PoliticaEditorialPage() {
   return (
     <>
+      {/* WebPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Política Editorial - Estándares de Contenido',
+            description: 'Conoce nuestros estándares editoriales, política de afiliados y proceso de verificación de contenido.',
+            url: 'https://enviardineromexico.com/about/politica-editorial/',
+            dateModified: '2025-12-17',
+            author: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Sobre Nosotros', item: 'https://enviardineromexico.com/about/' },
+              { '@type': 'ListItem', position: 3, name: 'Política Editorial', item: 'https://enviardineromexico.com/about/politica-editorial/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-12">
         <div className="container-narrow">
           <nav className="text-sm mb-6">

@@ -37,6 +37,78 @@ const guides = [
 export default function GuiasPage() {
   return (
     <>
+      {/* CollectionPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Guías para Enviar Dinero a México',
+            description: 'Guías completas para enviar dinero a México. Aprende sobre comisiones, impuestos, documentos y más.',
+            url: 'https://enviardineromexico.com/guias/',
+            mainEntity: {
+              '@type': 'ItemList',
+              itemListElement: guides.map((guide, index) => ({
+                '@type': 'ListItem',
+                position: index + 1,
+                url: `https://enviardineromexico.com/guias/${guide.slug}/`,
+                name: guide.title,
+              })),
+            },
+          }),
+        }}
+      />
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la forma más barata de enviar dinero a México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Para montos pequeños, Sendwave (0% comisión, ~2% en tipo de cambio). Para $500+, Remitly (sin comisión). Primera transferencia: Félix Pago (100% gratis).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuánto dinero puedo enviar sin declarar?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Las remesas de familiares directos (padres, hijos, cónyuge) son exentas sin límite en México. Los bancos reportan depósitos mayores a 15,000 MXN mensuales al SAT.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Puedo enviar dinero sin número de Seguro Social?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sí. Servicios como Sendwave aceptan licencia de conducir o pasaporte. Las cooperativas de crédito Juntos Avanzamos aceptan ITIN y Matrícula Consular.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
         <div className="container-wide">
           <nav className="text-sm mb-6">
