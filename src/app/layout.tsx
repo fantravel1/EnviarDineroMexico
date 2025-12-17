@@ -1,7 +1,14 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#1E40AF',
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://enviardineromexico.com'),
@@ -67,7 +74,6 @@ export default function RootLayout({
     <html lang="es-MX">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta name="theme-color" content="#1E40AF" />
       </head>
       <body className="font-sans">
         <Header />
