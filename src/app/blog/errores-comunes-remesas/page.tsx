@@ -245,6 +245,9 @@ export default function ErroresComunesPage() {
           </div>
 
           <footer className="mt-12 pt-8 border-t">
+            <p className="text-sm text-neutral-500 mb-4">
+              Última actualización: 17 de diciembre de 2025
+            </p>
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
               <Link
                 href="/blog/"
@@ -259,6 +262,49 @@ export default function ErroresComunesPage() {
           </footer>
         </div>
       </article>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: '5 Errores Comunes al Enviar Dinero a México (y Cómo Evitarlos)',
+            description: 'Los errores más costosos que cometen los migrantes al enviar dinero a México. Aprende a evitarlos y ahorra cientos de dólares al año.',
+            datePublished: '2025-01-10',
+            dateModified: '2025-12-17',
+            author: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': 'https://enviardineromexico.com/blog/errores-comunes-remesas',
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://enviardineromexico.com/blog' },
+              { '@type': 'ListItem', position: 3, name: 'Errores Comunes' },
+            ],
+          }),
+        }}
+      />
     </>
   )
 }

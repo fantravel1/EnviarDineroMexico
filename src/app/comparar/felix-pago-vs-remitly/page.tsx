@@ -122,6 +122,65 @@ export default function FelixPagoVsRemitlyPage() {
               <p className="text-trust-blue-100 text-sm">Primeras 2 gratis</p>
             </a>
           </div>
+
+          {/* Last Updated */}
+          <div className="mt-12 pt-8 border-t text-sm text-neutral-500">
+            <p>Última actualización: 17 de diciembre de 2025</p>
+          </div>
+
+          {/* SEO Schema Markup */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'Article',
+                headline: 'Félix Pago vs Remitly México 2025 | WhatsApp vs App Tradicional',
+                description: 'Comparamos Félix Pago y Remitly. WhatsApp innovador contra la app más popular para remesas.',
+                datePublished: '2025-12-01',
+                dateModified: '2025-12-17',
+                author: {
+                  '@type': 'Organization',
+                  name: 'EnviarDineroMexico',
+                  url: 'https://enviardineromexico.com',
+                },
+                publisher: {
+                  '@type': 'Organization',
+                  name: 'EnviarDineroMexico',
+                  url: 'https://enviardineromexico.com',
+                },
+              }),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: 'Inicio',
+                    item: 'https://enviardineromexico.com',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: 'Comparar',
+                    item: 'https://enviardineromexico.com/comparar',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 3,
+                    name: 'Félix Pago vs Remitly',
+                    item: 'https://enviardineromexico.com/comparar/felix-pago-vs-remitly',
+                  },
+                ],
+              }),
+            }}
+          />
         </div>
       </section>
     </>

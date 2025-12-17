@@ -212,9 +212,66 @@ export default function TipoCambio2025Page() {
                 Calcular mi Envío
               </Link>
             </div>
+            <div className="mt-6 text-center text-sm text-neutral-500">
+              Última actualización: 17 de diciembre de 2025
+            </div>
           </footer>
         </div>
       </article>
+
+      {/* SEO Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Tipo de Cambio Peso-Dólar 2025: Lo Que Debes Saber',
+            description: 'Análisis del tipo de cambio peso-dólar para 2025. Aprende cuándo es mejor momento para enviar dinero y cómo maximizar tus remesas.',
+            author: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            datePublished: '2025-01-15',
+            dateModified: '2025-12-17',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Inicio',
+                item: 'https://enviardineromexico.com/',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Blog',
+                item: 'https://enviardineromexico.com/blog',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Tipo de Cambio 2025',
+                item: 'https://enviardineromexico.com/blog/tipo-de-cambio-2025',
+              },
+            ],
+          }),
+        }}
+      />
     </>
   )
 }

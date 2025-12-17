@@ -351,7 +351,103 @@ export default function EmergenciaPage() {
             </div>
           </div>
         </div>
+
+        {/* Last Updated */}
+        <div className="text-center py-4">
+          <p className="text-sm text-gray-500">
+            Última actualización: 17 de diciembre de 2025
+          </p>
+        </div>
       </div>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'Cómo Enviar Dinero de Emergencia a México',
+            description: 'Guía paso a paso para enviar dinero urgente a México cuando cada minuto cuenta.',
+            totalTime: 'PT5M',
+            step: [
+              {
+                '@type': 'HowToStep',
+                position: 1,
+                name: 'Elige el servicio más rápido',
+                text: 'Para emergencias, usa Félix Pago (instantáneo via SPEI) o Remitly Express (minutos).',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 2,
+                name: 'Ten los datos listos',
+                text: 'Necesitas el CLABE (18 dígitos) de tu familiar para depósito bancario instantáneo.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 3,
+                name: 'Usa tarjeta de débito',
+                text: 'Es más rápido que transferencia bancaria y evita cargos extra de tarjeta de crédito.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 4,
+                name: 'Envía el dinero',
+                text: 'Completa la transferencia. Con Félix Pago via WhatsApp toma menos de 5 minutos.',
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Puedo enviar dinero a México de noche o en fin de semana?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sí, Félix Pago y Remitly funcionan 24/7. SPEI (sistema bancario mexicano) también opera las 24 horas, todos los días.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Qué es lo más rápido para cobro en efectivo en México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Remitly Express - disponible en minutos en OXXO, Elektra, y miles de tiendas. Tu familia solo necesita ID y el código de referencia.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Hay límite de cuánto puedo enviar de emergencia?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Los límites varían: Remitly hasta $2,999/día básico, Félix Pago hasta $1,500/día. Para más, necesitas verificación adicional.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias' },
+              { '@type': 'ListItem', position: 3, name: 'Transferencias de Emergencia' },
+            ],
+          }),
+        }}
+      />
     </main>
   )
 }

@@ -1,6 +1,27 @@
+import { Metadata } from 'next'
 import { ComparisonCalculator, ProviderCard, ComparisonTable, AffiliateDisclosure } from '@/components'
 import { providers } from '@/data/providers'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Enviar Dinero a México | Compara Remesas 2025',
+  description:
+    'Compara las mejores opciones para enviar dinero a México. Remitly, Sendwave, Félix Pago y más. Encuentra la forma más barata y rápida.',
+  keywords: [
+    'enviar dinero a mexico',
+    'mandar dinero a mexico',
+    'remesas a mexico',
+    'transferir dinero a mexico',
+    'mejor forma de enviar dinero a mexico',
+  ],
+  openGraph: {
+    title: 'Enviar Dinero a México | Compara Remesas 2025',
+    description:
+      'Compara las mejores opciones para enviar dinero a México. Encuentra la forma más barata y rápida.',
+    type: 'website',
+    locale: 'es_MX',
+  },
+}
 
 export default function HomePage() {
   return (

@@ -6,7 +6,7 @@ import { providersBySlug } from '@/data/providers'
 const provider = providersBySlug['wise']
 
 export const metadata: Metadata = {
-  title: 'Wise Review 2025: Tipo de Cambio Real Sin Margen Oculto | EnviarDineroMexico',
+  title: 'Wise México 2025: Tipo de Cambio Real Sin Margen',
   description: 'Análisis completo de Wise (TransferWise) para enviar dinero a México. Tipo de cambio medio real, comisiones transparentes, pros y contras. Actualizado diciembre 2025.',
   keywords: ['wise mexico', 'transferwise mexico', 'wise enviar dinero', 'wise tipo de cambio', 'wise comisiones'],
 }

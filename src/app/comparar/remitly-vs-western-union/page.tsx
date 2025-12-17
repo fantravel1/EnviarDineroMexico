@@ -163,6 +163,65 @@ export default function RemitlyVsWesternUnionPage() {
               <p className="text-yellow-100 text-sm">Encuentra una oficina cerca</p>
             </a>
           </div>
+
+          {/* Last Updated */}
+          <div className="mt-12 pt-8 border-t text-sm text-neutral-500">
+            <p>Última actualización: 17 de diciembre de 2025</p>
+          </div>
+
+          {/* SEO Schema Markup */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'Article',
+                headline: 'Remitly vs Western Union México 2025 | Comparación Completa',
+                description: 'Comparamos Remitly y Western Union para enviar dinero a México. Descubre cuál tiene mejores comisiones, tipo de cambio y velocidad.',
+                datePublished: '2025-12-01',
+                dateModified: '2025-12-17',
+                author: {
+                  '@type': 'Organization',
+                  name: 'EnviarDineroMexico',
+                  url: 'https://enviardineromexico.com',
+                },
+                publisher: {
+                  '@type': 'Organization',
+                  name: 'EnviarDineroMexico',
+                  url: 'https://enviardineromexico.com',
+                },
+              }),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: 'Inicio',
+                    item: 'https://enviardineromexico.com',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: 'Comparar',
+                    item: 'https://enviardineromexico.com/comparar',
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 3,
+                    name: 'Remitly vs Western Union',
+                    item: 'https://enviardineromexico.com/comparar/remitly-vs-western-union',
+                  },
+                ],
+              }),
+            }}
+          />
         </div>
       </section>
     </>

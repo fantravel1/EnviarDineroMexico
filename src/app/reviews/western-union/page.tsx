@@ -6,7 +6,7 @@ import { providersBySlug } from '@/data/providers'
 const provider = providersBySlug['western-union']
 
 export const metadata: Metadata = {
-  title: 'Western Union Review 2025: La Red Más Grande del Mundo | EnviarDineroMexico',
+  title: 'Western Union México 2025 | 500K+ Ubicaciones',
   description: 'Análisis completo de Western Union para enviar dinero a México. 500,000+ ubicaciones, opciones de cobro en efectivo, pros y contras. Actualizado diciembre 2025.',
   keywords: ['western union mexico', 'western union comisiones', 'western union enviar dinero', 'western union tipo de cambio'],
 }
