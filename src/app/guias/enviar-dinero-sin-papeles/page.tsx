@@ -408,7 +408,132 @@ export default function SinPapelesPage() {
             </div>
           </div>
         </div>
+
+        {/* Last Updated */}
+        <div className="mt-12 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+          Última actualización: 17 de diciembre de 2025
+        </div>
       </div>
+
+      {/* SEO Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'Cómo Enviar Dinero a México sin SSN',
+            description: 'Guía paso a paso para enviar dinero a México sin Social Security Number usando identificaciones alternativas',
+            step: [
+              {
+                '@type': 'HowToStep',
+                name: 'Elige un servicio flexible',
+                text: 'Recomendamos Félix Pago o Sendwave para empezar. Ambos tienen procesos de verificación simples que aceptan documentos alternativos.',
+              },
+              {
+                '@type': 'HowToStep',
+                name: 'Prepara tu identificación',
+                text: 'Ten lista una foto clara de tu documento. Asegúrate de que se vea tu nombre completo, foto, y que no esté vencido.',
+              },
+              {
+                '@type': 'HowToStep',
+                name: 'Crea tu cuenta',
+                text: 'Cuando pida SSN, muchos servicios tienen opción de "No tengo SSN" o campo para ITIN. Si no hay opción, deja el campo en blanco y continúa - te pedirá identificación alternativa.',
+              },
+              {
+                '@type': 'HowToStep',
+                name: 'Sube tu identificación',
+                text: 'Toma foto del frente y reverso de tu ID. Asegúrate de buena iluminación y que todo el documento sea visible.',
+              },
+              {
+                '@type': 'HowToStep',
+                name: 'Listo para enviar',
+                text: 'Una vez verificado, puedes enviar dinero normalmente. La verificación puede ser instantánea o tomar hasta 24 horas.',
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Es ilegal enviar dinero sin SSN?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. Enviar remesas es completamente legal independientemente de tu estatus migratorio. Los servicios de remesas NO reportan a inmigración.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Por qué algunos servicios piden SSN?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Por regulaciones bancarias contra lavado de dinero. Pero la ley permite usar identificaciones alternativas para montos normales (generalmente menos de $3,000/día).',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Hay límites de envío sin SSN?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sí, generalmente los límites son menores sin SSN. Típicamente $500-$2,999 por día dependiendo del servicio. Con ITIN los límites suelen ser más altos.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Puedo obtener ITIN para enviar más?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sí, puedes solicitar ITIN en el IRS. Te permite límites más altos y acceso a más servicios. El proceso toma varias semanas.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Dónde saco la matrícula consular?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'En cualquier consulado mexicano. Necesitas acta de nacimiento, identificación con foto, y comprobante de domicilio en EE.UU. El costo es aproximadamente $30-50.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Inicio',
+                item: 'https://enviardineromexico.com/',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Guías',
+                item: 'https://enviardineromexico.com/guias',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Sin Papeles',
+                item: 'https://enviardineromexico.com/guias/enviar-dinero-sin-papeles',
+              },
+            ],
+          }),
+        }}
+      />
     </main>
   )
 }

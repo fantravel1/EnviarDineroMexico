@@ -376,7 +376,101 @@ export default function AlternativasWesternUnionPage() {
             </div>
           </div>
         </div>
+
+        {/* Last Updated */}
+        <div className="mt-12 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+          Última actualización: 17 de diciembre de 2025
+        </div>
       </div>
+
+      {/* SEO Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Alternativas a Western Union para México',
+            description: 'Las mejores alternativas a Western Union para enviar dinero a México. Compara Sendwave, Remitly, Félix Pago y más. Ahorra hasta 50% en comisiones.',
+            author: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            datePublished: '2025-12-17',
+            dateModified: '2025-12-17',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Por qué buscar alternativas a Western Union?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Western Union cobra comisiones altas ($5-15) más un margen del 2.5-4% en el tipo de cambio. Enviar $500 puede costar $22+ en total. Las alternativas digitales ofrecen mejores tipos de cambio y comisiones más bajas.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la alternativa más económica a Western Union?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sendwave ofrece $0 de comisión con un margen de ~2% en el tipo de cambio. Para envíos de $500, ahorras aproximadamente $12.50 comparado con Western Union.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuándo sí debo usar Western Union?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Western Union es útil para zonas muy rurales con su red de Telecomm, si no tienes smartphone, para emergencias nocturnas con agentes 24/7, o si la persona receptora prefiere la marca conocida.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Inicio',
+                item: 'https://enviardineromexico.com/',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Comparar',
+                item: 'https://enviardineromexico.com/comparar',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Alternativas Western Union',
+                item: 'https://enviardineromexico.com/comparar/alternativas-western-union',
+              },
+            ],
+          }),
+        }}
+      />
     </main>
   )
 }

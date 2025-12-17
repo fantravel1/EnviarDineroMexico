@@ -366,6 +366,86 @@ export default function WiseVsXoomPage() {
           </div>
         </div>
       </div>
+      {/* Last Updated */}
+      <div className="container mx-auto px-4 py-4 text-center">
+        <p className="text-sm text-gray-500">
+          Última actualización: 17 de diciembre de 2025
+        </p>
+      </div>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Wise vs Xoom 2025: ¿Cuál es Mejor para México?',
+            description: 'Comparación detallada entre Wise y Xoom para enviar dinero a México.',
+            datePublished: '2025-12-01',
+            dateModified: '2025-12-17',
+            author: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Cuál tiene mejor tipo de cambio, Wise o Xoom?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Wise tiene mejor tipo de cambio. Usa el tipo de cambio medio del mercado sin agregar margen. Xoom gana dinero con un margen del 2-3% en el tipo de cambio.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál es más rápido, Wise o Xoom?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Xoom es más rápido. Puede entregar en minutos con tarjeta. Wise toma 1-2 días hábiles para México.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Puedo enviar a efectivo con Wise?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No, Wise solo ofrece depósito bancario para México. Si necesitas efectivo, usa Xoom, Remitly, o Western Union.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com' },
+              { '@type': 'ListItem', position: 2, name: 'Comparar', item: 'https://enviardineromexico.com/comparar' },
+              { '@type': 'ListItem', position: 3, name: 'Wise vs Xoom' },
+            ],
+          }),
+        }}
+      />
     </main>
   )
 }

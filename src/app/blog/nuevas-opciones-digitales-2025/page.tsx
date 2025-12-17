@@ -283,9 +283,66 @@ export default function NuevasOpcionesDigitalesPage() {
                 Comparar Todos los Servicios
               </Link>
             </div>
+            <div className="mt-6 text-center text-sm text-neutral-500">
+              Última actualización: 17 de diciembre de 2025
+            </div>
           </footer>
         </div>
       </article>
+
+      {/* SEO Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Nuevas Opciones Digitales para Remesas en 2025',
+            description: 'Las apps y servicios más nuevos para enviar dinero a México en 2025. Comparación de características, costos y experiencia de usuario.',
+            author: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'EnviarDineroMexico',
+              url: 'https://enviardineromexico.com',
+            },
+            datePublished: '2025-01-05',
+            dateModified: '2025-12-17',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Inicio',
+                item: 'https://enviardineromexico.com/',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Blog',
+                item: 'https://enviardineromexico.com/blog',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Nuevas Opciones 2025',
+                item: 'https://enviardineromexico.com/blog/nuevas-opciones-digitales-2025',
+              },
+            ],
+          }),
+        }}
+      />
     </>
   )
 }
