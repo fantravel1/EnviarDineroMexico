@@ -6,18 +6,18 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a México | Compara Remesas 2025',
   description:
-    'Compara las mejores opciones para enviar dinero a México. Remitly, Sendwave, Félix Pago y más. Encuentra la forma más barata y rápida.',
+    'Compara opciones para enviar dinero a México. Remitly, Sendwave, Félix Pago y más. Encuentra la opción adecuada para tu situación.',
   keywords: [
     'enviar dinero a mexico',
     'mandar dinero a mexico',
     'remesas a mexico',
     'transferir dinero a mexico',
-    'mejor forma de enviar dinero a mexico',
+    'comparar servicios de remesas',
   ],
   openGraph: {
     title: 'Enviar Dinero a México | Compara Remesas 2025',
     description:
-      'Compara las mejores opciones para enviar dinero a México. Encuentra la forma más barata y rápida.',
+      'Compara opciones para enviar dinero a México. Encuentra la opción adecuada para tu situación.',
     type: 'website',
     locale: 'es_MX',
   },
@@ -33,11 +33,11 @@ export default function HomePage() {
             {/* Hero content */}
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                La forma más fácil de comparar y enviar dinero a México
+                Compara servicios para enviar dinero a México
               </h1>
               <p className="text-lg md:text-xl text-trust-blue-100 mb-8">
-                Compara Remitly, Sendwave, Félix Pago y más. Encuentra la opción más barata
-                y rápida para enviar remesas a tu familia.
+                Compara Remitly, Sendwave, Félix Pago y más. Encuentra la opción adecuada
+                para enviar remesas a tu familia según tu monto y necesidades.
               </p>
 
               {/* Trust signals */}
