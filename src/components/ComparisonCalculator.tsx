@@ -90,7 +90,7 @@ export function ComparisonCalculator() {
               key={quickAmount}
               onClick={() => setAmount(quickAmount)}
               className={cn(
-                'flex-1 py-2 px-3 rounded-lg text-sm font-medium transition-colors',
+                'flex-1 py-3 px-3 rounded-lg text-sm font-medium transition-colors',
                 amount === quickAmount
                   ? 'bg-trust-blue-600 text-white'
                   : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
