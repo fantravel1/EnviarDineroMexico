@@ -12,7 +12,7 @@ const comparisons = [
   {
     title: 'Remitly vs Western Union',
     slug: 'remitly-vs-western-union',
-    description: 'El líder digital contra el gigante tradicional',
+    description: 'El lider digital contra el gigante tradicional',
   },
   {
     title: 'Sendwave vs Remitly',
@@ -20,9 +20,69 @@ const comparisons = [
     description: 'Cero comisiones vs mayor cobertura',
   },
   {
-    title: 'Félix Pago vs Remitly',
+    title: 'Felix Pago vs Remitly',
     slug: 'felix-pago-vs-remitly',
     description: 'WhatsApp innovador vs app establecida',
+  },
+  {
+    title: 'Wise vs Xoom',
+    slug: 'wise-vs-xoom',
+    description: 'Tipo de cambio real vs integracion PayPal',
+  },
+  {
+    title: 'Alternativas a Western Union',
+    slug: 'alternativas-western-union',
+    description: 'Opciones mas baratas que Western Union',
+  },
+  {
+    title: 'Sendwave vs Western Union',
+    slug: 'sendwave-vs-western-union',
+    description: 'App sin comision vs red tradicional',
+  },
+  {
+    title: 'Wise vs Remitly',
+    slug: 'wise-vs-remitly',
+    description: 'Tipo de cambio real vs cobro en efectivo',
+  },
+  {
+    title: 'Xoom vs Western Union',
+    slug: 'xoom-vs-western-union',
+    description: 'PayPal vs el lider tradicional',
+  },
+  {
+    title: 'MoneyGram vs Western Union',
+    slug: 'moneygram-vs-western-union',
+    description: 'Batalla de gigantes tradicionales',
+  },
+  {
+    title: 'Felix Pago vs Sendwave',
+    slug: 'felix-pago-vs-sendwave',
+    description: 'Dos apps con cero comisiones',
+  },
+  {
+    title: 'Remitly vs Xoom',
+    slug: 'remitly-vs-xoom',
+    description: 'Mejor app vs ecosistema PayPal',
+  },
+  {
+    title: 'Wise vs Western Union',
+    slug: 'wise-vs-western-union',
+    description: 'Ahorra hasta 5x con tipo de cambio real',
+  },
+  {
+    title: 'MoneyGram vs Remitly',
+    slug: 'moneygram-vs-remitly',
+    description: 'Tradicional vs app moderna',
+  },
+  {
+    title: 'WorldRemit vs Remitly',
+    slug: 'worldremit-vs-remitly',
+    description: 'Global vs especialista en Mexico',
+  },
+  {
+    title: 'Sendwave vs Wise',
+    slug: 'sendwave-vs-wise',
+    description: 'Cero comision vs tipo de cambio real',
   },
 ]
 
