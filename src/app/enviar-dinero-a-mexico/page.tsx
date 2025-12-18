@@ -130,14 +130,18 @@ export default function EnviarDineroMexicoPage() {
               </thead>
               <tbody>
                 {[
-                  { state: 'Michoacán', amount: '$5.4B+', priority: 5 },
-                  { state: 'Jalisco', amount: '$5.2B+', priority: 5 },
-                  { state: 'Guanajuato', amount: '$4.8B+', priority: 5 },
-                  { state: 'Estado de México', amount: '$3.5B+', priority: 4 },
-                  { state: 'Oaxaca', amount: '$2.8B+', priority: 4 },
+                  { state: 'Michoacan', amount: '$5.4B+', priority: 5, slug: 'a-michoacan' },
+                  { state: 'Jalisco', amount: '$5.2B+', priority: 5, slug: 'a-jalisco' },
+                  { state: 'Guanajuato', amount: '$4.8B+', priority: 5, slug: 'a-guanajuato' },
+                  { state: 'Estado de Mexico', amount: '$3.5B+', priority: 4, slug: 'a-estado-de-mexico' },
+                  { state: 'Oaxaca', amount: '$2.8B+', priority: 4, slug: 'a-oaxaca' },
                 ].map((row) => (
                   <tr key={row.state} className="border-b border-neutral-100">
-                    <td className="p-3 font-medium">{row.state}</td>
+                    <td className="p-3 font-medium">
+                      <Link href={`/enviar-dinero-a-mexico/${row.slug}/`} className="text-trust-blue-600 hover:underline">
+                        {row.state}
+                      </Link>
+                    </td>
                     <td className="p-3 text-right">{row.amount}</td>
                     <td className="p-3 text-center text-yellow-500">
                       {'★'.repeat(row.priority)}
