@@ -4,20 +4,25 @@ import { ComparisonTable, ProviderCard, AffiliateDisclosure } from '@/components
 import { providers } from '@/data/providers'
 
 export const metadata: Metadata = {
-  title: 'Enviar Dinero a México desde Estados Unidos | Guía Completa 2025',
+  title: 'Cómo Enviar Dinero a México de Estados Unidos | Guía Completa 2025',
   description:
-    'Guía completa para enviar dinero a México desde EE.UU. Compara Remitly, Sendwave, Félix Pago y más. Encuentra la forma más barata y rápida de enviar remesas.',
+    'Aprende cómo enviar dinero a México desde Estados Unidos. Descubre dónde mandar dinero cerca de ti, cuánto puedes enviar por mes y las opciones más baratas para transferir remesas.',
   keywords: [
-    'enviar dinero a mexico',
+    'como enviar dinero a mexico',
+    'cómo enviar dinero a méxico de estados unidos',
     'mandar dinero a mexico',
+    'cómo mandar dinero a méxico',
+    'donde enviar dinero a mexico',
+    'donde enviar dinero a mexico cerca de mi',
+    'cuanto dinero puedo enviar a mexico por mes',
     'transferir dinero a mexico',
     'remesas usa mexico',
     'mejor forma enviar dinero mexico',
   ],
   openGraph: {
-    title: 'Enviar Dinero a México desde Estados Unidos | Guía Completa 2025',
+    title: 'Cómo Enviar Dinero a México de Estados Unidos | Guía Completa 2025',
     description:
-      'Guía completa para enviar dinero a México desde EE.UU. Compara las mejores opciones y ahorra en cada transferencia.',
+      'Guía completa: cómo enviar dinero a México, dónde mandar cerca de ti y cuánto puedes transferir por mes.',
   },
 }
 
@@ -35,11 +40,11 @@ export default function EnviarDineroMexicoPage() {
             </ol>
           </nav>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Enviar Dinero a México desde Estados Unidos
+            Cómo Enviar Dinero a México desde Estados Unidos
           </h1>
           <p className="text-xl text-trust-blue-100 max-w-3xl">
-            La guía más completa en español para enviar remesas a México.
-            Compara proveedores, tarifas y encuentra la mejor opción para tu familia.
+            La guía más completa para mandar dinero a México. Descubre dónde enviar dinero cerca de ti,
+            cuánto puedes transferir por mes y las mejores opciones para tu familia.
           </p>
         </div>
       </section>
@@ -370,20 +375,28 @@ export default function EnviarDineroMexicoPage() {
           <div className="space-y-4">
             {[
               {
-                q: '¿Puedo enviar dinero a México sin papeles?',
-                a: 'Sí, varios servicios aceptan identificación alternativa. Sendwave acepta licencia de conducir o pasaporte. Las cooperativas de crédito de la red Juntos Avanzamos aceptan ITIN, Matrícula Consular y pasaportes extranjeros.',
+                q: '¿Cómo enviar dinero a México de Estados Unidos?',
+                a: 'Para enviar dinero a México desde EE.UU., necesitas una identificación (licencia, pasaporte o matrícula consular), una tarjeta de débito o cuenta bancaria, y los datos de tu destinatario. Puedes usar apps móviles como Remitly, Sendwave o Félix Pago desde tu celular en solo 5-10 minutos.',
               },
               {
-                q: '¿Cuánto dinero puedo enviar a México sin declarar?',
-                a: 'En México, las remesas de familiares directos (padres, hijos, cónyuge) son exentas de impuestos sin límite. Los bancos mexicanos reportan al SAT depósitos mayores a 15,000 MXN mensuales. En EE.UU., transferencias mayores a $10,000 requieren reporte.',
+                q: '¿Dónde puedo enviar dinero a México cerca de mí?',
+                a: 'Puedes enviar dinero desde cualquier lugar con apps como Remitly, Sendwave o Félix Pago. Si prefieres ir en persona, Western Union y MoneyGram tienen agentes en Walmart, Walgreens, CVS, y tiendas locales. Busca "money transfer near me" en Google Maps para encontrar ubicaciones.',
+              },
+              {
+                q: '¿Cuánto dinero puedo enviar a México por mes?',
+                a: 'Los límites varían: Remitly permite hasta $2,999/día y $10,000/mes. Sendwave tiene límites similares. Western Union permite hasta $7,500 por transacción. En México, las remesas de familiares directos son exentas de impuestos sin límite, pero bancos reportan depósitos mayores a 15,000 MXN/mes al SAT.',
+              },
+              {
+                q: '¿Puedo enviar dinero a México sin papeles?',
+                a: 'Sí, varios servicios aceptan identificación alternativa. Sendwave acepta licencia de conducir o pasaporte. Las cooperativas de crédito de la red Juntos Avanzamos aceptan ITIN, Matrícula Consular y pasaportes extranjeros.',
               },
               {
                 q: '¿Qué pasa si mi familiar no tiene cuenta bancaria?',
                 a: 'Puede recibir el dinero en efectivo en más de 470,000 ubicaciones en México incluyendo OXXO, Elektra, Walmart, 7-Eleven y farmacias. Remitly tiene la red más extensa para cobro en efectivo.',
               },
               {
-                q: '¿Es mejor enviar dinero los fines de semana?',
-                a: 'Los depósitos bancarios son más rápidos en horario bancario (lunes a viernes). Sin embargo, servicios como Félix Pago usando SPEI funcionan 24/7. Para cobro en efectivo, las tiendas como OXXO están abiertas todos los días.',
+                q: '¿Cuál es la forma más barata de mandar dinero a México?',
+                a: 'Para montos de $200-500, Sendwave es la opción más económica con cero comisiones. Para $500 o más, Remitly ofrece transferencias sin comisión. Félix Pago es completamente gratis para tu primera transferencia.',
               },
             ].map((item, i) => (
               <details key={i} className="bg-white rounded-lg shadow-sm group">
@@ -422,14 +435,57 @@ export default function EnviarDineroMexicoPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Article',
-            headline: 'Enviar Dinero a México desde Estados Unidos | Guía Completa 2025',
-            description: 'Guía completa para enviar dinero a México desde EE.UU.',
+            headline: 'Cómo Enviar Dinero a México de Estados Unidos | Guía Completa 2025',
+            description: 'Aprende cómo enviar dinero a México desde Estados Unidos. Descubre dónde mandar dinero cerca de ti y cuánto puedes enviar por mes.',
             datePublished: '2025-12-01',
-            dateModified: '2025-12-16',
+            dateModified: '2025-12-22',
             author: {
               '@type': 'Organization',
               name: 'EnviarDineroMexico',
             },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Cómo enviar dinero a México de Estados Unidos?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Para enviar dinero a México desde EE.UU., necesitas una identificación (licencia, pasaporte o matrícula consular), una tarjeta de débito o cuenta bancaria, y los datos de tu destinatario. Puedes usar apps móviles como Remitly, Sendwave o Félix Pago desde tu celular en solo 5-10 minutos.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Dónde puedo enviar dinero a México cerca de mí?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Puedes enviar dinero desde cualquier lugar con apps como Remitly, Sendwave o Félix Pago. Si prefieres ir en persona, Western Union y MoneyGram tienen agentes en Walmart, Walgreens, CVS, y tiendas locales.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuánto dinero puedo enviar a México por mes?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Los límites varían: Remitly permite hasta $2,999/día y $10,000/mes. Sendwave tiene límites similares. Western Union permite hasta $7,500 por transacción. En México, las remesas de familiares directos son exentas de impuestos sin límite.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la forma más barata de mandar dinero a México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Para montos de $200-500, Sendwave es la opción más económica con cero comisiones. Para $500 o más, Remitly ofrece transferencias sin comisión. Félix Pago es completamente gratis para tu primera transferencia.',
+                },
+              },
+            ],
           }),
         }}
       />

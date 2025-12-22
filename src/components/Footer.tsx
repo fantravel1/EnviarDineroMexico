@@ -20,10 +20,11 @@ const footerLinks = {
   ],
   recursos: [
     { name: 'Calculadora', href: '/calculadora/' },
-    { name: 'Guia Primera Transferencia', href: '/guias/como-enviar-dinero-primera-vez/' },
+    { name: 'Cómo Enviar Dinero', href: '/guias/como-enviar-dinero-primera-vez/' },
+    { name: 'Dónde Enviar Dinero', href: '/guias/donde-enviar-dinero/' },
+    { name: 'Límites de Envío', href: '/guias/limites-de-envio/' },
     { name: 'Impuestos y Remesas', href: '/guias/impuestos-remesas-mexico/' },
     { name: 'Blog', href: '/blog/' },
-    { name: 'Nosotros', href: '/nosotros/' },
   ],
   legal: [
     { name: 'Terminos de Servicio', href: '/terminos-servicio/' },

@@ -20,7 +20,13 @@ export const metadata: Metadata = {
     'La guía más completa en español para enviar dinero a México. Compara Remitly, Sendwave, Félix Pago y más. Encuentra la forma más barata y rápida de enviar remesas.',
   keywords: [
     'enviar dinero a mexico',
+    'como enviar dinero a mexico',
+    'cómo enviar dinero a méxico de estados unidos',
     'mandar dinero a mexico',
+    'cómo mandar dinero a méxico',
+    'donde enviar dinero a mexico',
+    'donde enviar dinero a mexico cerca de mi',
+    'cuanto dinero puedo enviar a mexico por mes',
     'transferir dinero a mexico',
     'remesas mexico',
     'remitly',
