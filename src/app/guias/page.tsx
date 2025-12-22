@@ -15,6 +15,18 @@ const guides = [
     icon: '🚀',
   },
   {
+    title: 'Dónde Enviar Dinero a México',
+    slug: 'donde-enviar-dinero',
+    description: 'Encuentra dónde enviar dinero cerca de ti: apps móviles vs. agentes físicos como Western Union.',
+    icon: '📍',
+  },
+  {
+    title: 'Límites de Envío por Mes',
+    slug: 'limites-de-envio',
+    description: 'Cuánto dinero puedes enviar a México por mes. Límites por proveedor y regulaciones fiscales.',
+    icon: '💰',
+  },
+  {
     title: 'Impuestos y Regulaciones de Remesas',
     slug: 'impuestos-remesas-mexico',
     description: 'Lo que necesitas saber sobre impuestos en México y EE.UU. para remesas familiares.',
