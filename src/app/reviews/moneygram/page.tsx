@@ -8,7 +8,21 @@ const provider = providersBySlug['moneygram']
 export const metadata: Metadata = {
   title: 'MoneyGram Review 2025: Red Global con Opciones Digitales | EnviarDineroMexico',
   description: 'Análisis completo de MoneyGram para enviar dinero a México. 350,000+ ubicaciones, red Walmart, pros y contras. Actualizado diciembre 2025.',
-  keywords: ['moneygram mexico', 'moneygram comisiones', 'moneygram walmart', 'moneygram enviar dinero'],
+  keywords: [
+    'moneygram mexico',
+    'moneygram comisiones',
+    'moneygram walmart',
+    'moneygram enviar dinero',
+    'moneygram tipo de cambio',
+    'moneygram ubicaciones',
+    'moneygram app',
+  ],
+  openGraph: {
+    title: 'MoneyGram Review 2025: Envía Dinero a México vía Walmart',
+    description: 'Análisis completo de MoneyGram para México. Cobra en Walmart, Bodega Aurrerá y 350,000+ ubicaciones. Compara costos, velocidad y alternativas.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function MoneyGramReviewPage() {

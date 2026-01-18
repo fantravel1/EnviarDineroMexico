@@ -9,7 +9,21 @@ const xoom = providersBySlug['xoom']
 export const metadata: Metadata = {
   title: 'Wise vs Xoom 2025: ¿Cuál es Mejor para México? | Comparación',
   description: 'Comparación detallada entre Wise y Xoom para enviar dinero a México. Comisiones, tipo de cambio, velocidad y características. Actualizado 2025.',
-  keywords: ['wise vs xoom', 'wise o xoom', 'comparar wise xoom mexico', 'transferwise vs xoom'],
+  keywords: [
+    'wise vs xoom',
+    'comparar wise xoom',
+    'cual es mejor wise o xoom',
+    'wise o xoom mexico',
+    'transferwise vs xoom',
+    'diferencia wise xoom',
+    'enviar dinero mexico wise xoom',
+  ],
+  openGraph: {
+    title: 'Wise vs Xoom México 2025',
+    description: 'Comparamos tipo de cambio real de Wise vs integración PayPal de Xoom para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function WiseVsXoomPage() {

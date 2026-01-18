@@ -8,7 +8,21 @@ const provider = providersBySlug['xoom']
 export const metadata: Metadata = {
   title: 'Xoom Review 2025: Respaldado por PayPal | EnviarDineroMexico',
   description: 'Análisis completo de Xoom (PayPal) para enviar dinero a México. Sin comisión desde cuenta bancaria, recarga de celulares, pros y contras. Actualizado diciembre 2025.',
-  keywords: ['xoom mexico', 'xoom paypal', 'xoom enviar dinero', 'xoom comisiones', 'xoom tipo de cambio'],
+  keywords: [
+    'xoom mexico',
+    'xoom paypal',
+    'xoom enviar dinero',
+    'xoom comisiones',
+    'xoom tipo de cambio',
+    'xoom recarga celular',
+    'xoom transferencia gratis',
+  ],
+  openGraph: {
+    title: 'Xoom Review 2025: Envía Dinero a México con PayPal',
+    description: 'Análisis completo de Xoom respaldado por PayPal. Sin comisión desde cuenta bancaria, recarga de celulares en México, y pago de servicios. Review actualizado.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function XoomReviewPage() {

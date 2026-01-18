@@ -20,11 +20,13 @@ const footerLinks = {
   ],
   recursos: [
     { name: 'Calculadora', href: '/calculadora/' },
-    { name: 'Cómo Enviar Dinero', href: '/guias/como-enviar-dinero-primera-vez/' },
-    { name: 'Dónde Enviar Dinero', href: '/guias/donde-enviar-dinero/' },
-    { name: 'Límites de Envío', href: '/guias/limites-de-envio/' },
-    { name: 'Impuestos y Remesas', href: '/guias/impuestos-remesas-mexico/' },
-    { name: 'Blog', href: '/blog/' },
+    { name: 'Cómo Enviar Dinero', href: '/guias/como-enviar-dinero/' },
+    { name: 'Enviar Sin Comisiones', href: '/guias/enviar-dinero-sin-comisiones/' },
+    { name: 'Cuánto Cuesta Enviar', href: '/guias/cuanto-cuesta-enviar-dinero/' },
+    { name: 'Mejor Tipo de Cambio', href: '/guias/mejor-tipo-de-cambio/' },
+    { name: 'Apps para Enviar', href: '/guias/aplicaciones-enviar-dinero/' },
+    { name: 'Requisitos y Documentos', href: '/guias/requisitos-enviar-dinero/' },
+    { name: 'Todas las Guías', href: '/guias/' },
   ],
   legal: [
     { name: 'Terminos de Servicio', href: '/terminos-servicio/' },

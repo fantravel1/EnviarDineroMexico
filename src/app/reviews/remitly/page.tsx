@@ -9,6 +9,22 @@ const provider = providersBySlug['remitly']
 export const metadata: Metadata = {
   title: `${provider.name} Review 2025 | El Líder del Mercado`,
   description: provider.description,
+  keywords: [
+    'remitly review',
+    'remitly mexico',
+    'remitly comisiones',
+    'remitly enviar dinero',
+    'remitly tipo de cambio',
+    'remitly app',
+    'remitly oxxo',
+    'remitly promociones',
+  ],
+  openGraph: {
+    title: 'Remitly Review 2025: El Líder en Envíos a México',
+    description: 'Análisis completo de Remitly, la app mejor calificada para enviar dinero a México. 470,000+ ubicaciones de cobro, promociones para nuevos usuarios y garantía de entrega.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function RemitlyReviewPage() {

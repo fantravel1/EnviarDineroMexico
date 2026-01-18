@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'WorldRemit vs Remitly Mexico 2025 | Comparacion de Apps',
   description: 'Comparamos WorldRemit y Remitly para enviar dinero a Mexico. Dos apps populares con diferentes fortalezas.',
   alternates: { canonical: '/comparar/worldremit-vs-remitly/' },
+  keywords: [
+    'worldremit vs remitly',
+    'comparar worldremit remitly',
+    'cual es mejor worldremit o remitly',
+    'worldremit o remitly mexico',
+    'diferencia worldremit remitly',
+    'enviar dinero mexico worldremit remitly',
+    'worldremit vs remitly comisiones',
+  ],
+  openGraph: {
+    title: 'WorldRemit vs Remitly México 2025',
+    description: 'Comparamos WorldRemit con cobertura global vs Remitly especializado en México para enviar dinero.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function WorldRemitVsRemitlyPage() {

@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: 'Sobre Nosotros | EnviarDineroMexico.com',
   description:
     'Conoce nuestra misión: ayudar a la comunidad mexicana en EE.UU. a enviar dinero a México de forma más económica y segura.',
+  keywords: ['sobre nosotros', 'mision enviardineromexico', 'quienes somos', 'comparacion remesas mexico', 'ayuda comunidad mexicana', 'transparencia remesas'],
+  openGraph: {
+    title: 'Sobre Nosotros | EnviarDineroMexico.com',
+    description: 'Conoce nuestra misión: ayudar a la comunidad mexicana en EE.UU. a enviar dinero a México de forma más económica y segura.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 export default function NosotrosPage() {

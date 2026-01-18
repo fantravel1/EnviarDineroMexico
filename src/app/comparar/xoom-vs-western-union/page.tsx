@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Xoom vs Western Union Mexico 2025 | Cual Conviene Mas',
   description: 'Comparamos Xoom (PayPal) y Western Union para enviar dinero a Mexico. Dos gigantes de las remesas frente a frente.',
   alternates: { canonical: '/comparar/xoom-vs-western-union/' },
+  keywords: [
+    'xoom vs western union',
+    'comparar xoom western union',
+    'cual es mejor xoom o western union',
+    'xoom o western union mexico',
+    'diferencia xoom western union',
+    'enviar dinero mexico xoom western union',
+    'xoom paypal vs western union',
+  ],
+  openGraph: {
+    title: 'Xoom vs Western Union México 2025',
+    description: 'Comparamos Xoom con integración PayPal vs Western Union el líder tradicional para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function XoomVsWesternUnionPage() {

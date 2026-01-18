@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'MoneyGram vs Remitly Mexico 2025 | Tradicional vs Digital',
   description: 'Comparamos MoneyGram y Remitly para enviar dinero a Mexico. Servicio tradicional vs app moderna con mejor precio.',
   alternates: { canonical: '/comparar/moneygram-vs-remitly/' },
+  keywords: [
+    'moneygram vs remitly',
+    'comparar moneygram remitly',
+    'cual es mejor moneygram o remitly',
+    'moneygram o remitly mexico',
+    'diferencia moneygram remitly',
+    'enviar dinero mexico moneygram remitly',
+    'moneygram vs remitly comisiones',
+  ],
+  openGraph: {
+    title: 'MoneyGram vs Remitly México 2025',
+    description: 'Comparamos MoneyGram servicio tradicional vs Remitly app moderna para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function MoneygramVsRemitlyPage() {

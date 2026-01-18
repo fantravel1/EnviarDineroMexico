@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Wise vs Remitly Mexico 2025 | Comparacion Detallada',
   description: 'Comparamos Wise (TransferWise) y Remitly para enviar dinero a Mexico. Tipo de cambio real vs promociones y cobro en efectivo.',
   alternates: { canonical: '/comparar/wise-vs-remitly/' },
+  keywords: [
+    'wise vs remitly',
+    'comparar wise remitly',
+    'transferwise vs remitly mexico',
+    'cual es mejor wise o remitly',
+    'wise o remitly mexico',
+    'diferencia wise remitly',
+    'enviar dinero mexico wise remitly',
+  ],
+  openGraph: {
+    title: 'Wise vs Remitly México 2025',
+    description: 'Comparamos tipo de cambio real de Wise vs cobro en efectivo de Remitly para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function WiseVsRemitlyPage() {

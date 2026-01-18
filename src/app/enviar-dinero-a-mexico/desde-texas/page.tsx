@@ -6,7 +6,13 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a México desde Texas 2025 | Mejores Opciones',
   description: 'Guía completa para enviar dinero a México desde Texas. Compara Sendwave, Remitly, Félix Pago. Houston, Dallas, San Antonio. Actualizado 2025.',
-  keywords: ['enviar dinero a mexico desde texas', 'remesas texas mexico', 'enviar dinero houston mexico', 'transferencias texas mexico'],
+  keywords: ['enviar dinero a mexico desde texas', 'remesas texas mexico', 'enviar dinero houston mexico', 'transferencias texas mexico', 'enviar dinero dallas mexico', 'remesas desde houston'],
+  openGraph: {
+    title: 'Enviar Dinero a México desde Texas 2025 | Mejores Opciones',
+    description: 'Guía completa para enviar dinero a México desde Texas. Compara Sendwave, Remitly, Félix Pago. Houston, Dallas, San Antonio.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function DesdeTexas() {

@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Wise vs Western Union Mexico 2025 | Digital vs Tradicional',
   description: 'Comparamos Wise (TransferWise) y Western Union para enviar dinero a Mexico. Tipo de cambio real vs red de efectivo masiva.',
   alternates: { canonical: '/comparar/wise-vs-western-union/' },
+  keywords: [
+    'wise vs western union',
+    'comparar wise western union',
+    'transferwise vs western union mexico',
+    'cual es mejor wise o western union',
+    'wise o western union mexico',
+    'diferencia wise western union',
+    'enviar dinero mexico wise western union',
+  ],
+  openGraph: {
+    title: 'Wise vs Western Union México 2025',
+    description: 'Comparamos tipo de cambio real de Wise vs la red de efectivo de Western Union para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function WiseVsWesternUnionPage() {

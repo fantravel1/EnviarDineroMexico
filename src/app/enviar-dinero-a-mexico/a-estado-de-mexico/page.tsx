@@ -6,9 +6,15 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero al Estado de Mexico 2025 | Guia Completa',
   description: 'Como enviar dinero al Estado de Mexico. Cuarto estado con mas remesas ($3.8B). Toluca, Ecatepec, Naucalpan, Nezahualcoyotl. Mejores opciones.',
-  keywords: ['enviar dinero estado de mexico', 'remesas edomex', 'enviar dinero toluca', 'transferencias estado de mexico'],
+  keywords: ['enviar dinero estado de mexico', 'remesas edomex', 'enviar dinero toluca', 'transferencias estado de mexico', 'remesas ecatepec', 'enviar dinero naucalpan'],
   alternates: {
     canonical: '/enviar-dinero-a-mexico/a-estado-de-mexico/',
+  },
+  openGraph: {
+    title: 'Enviar Dinero al Estado de Mexico 2025 | Guia Completa',
+    description: 'Como enviar dinero al Estado de Mexico. Cuarto estado con mas remesas ($3.8B). Toluca, Ecatepec, Naucalpan.',
+    type: 'article',
+    locale: 'es_MX',
   },
 }
 

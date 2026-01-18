@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'MoneyGram vs Western Union Mexico 2025 | Gigantes de Remesas',
   description: 'Comparamos MoneyGram y Western Union para enviar dinero a Mexico. Los dos servicios tradicionales mas grandes frente a frente.',
   alternates: { canonical: '/comparar/moneygram-vs-western-union/' },
+  keywords: [
+    'moneygram vs western union',
+    'comparar moneygram western union',
+    'cual es mejor moneygram o western union',
+    'moneygram o western union mexico',
+    'diferencia moneygram western union',
+    'enviar dinero mexico moneygram western union',
+    'moneygram vs western union comisiones',
+  ],
+  openGraph: {
+    title: 'MoneyGram vs Western Union México 2025',
+    description: 'Comparamos los dos gigantes tradicionales de remesas: MoneyGram y Western Union para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function MoneygramVsWesternUnionPage() {

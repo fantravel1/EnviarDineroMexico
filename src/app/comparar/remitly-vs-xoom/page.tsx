@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Remitly vs Xoom Mexico 2025 | Comparacion de Apps Populares',
   description: 'Comparamos Remitly y Xoom (PayPal) para enviar dinero a Mexico. Dos de las apps mas populares para remesas.',
   alternates: { canonical: '/comparar/remitly-vs-xoom/' },
+  keywords: [
+    'remitly vs xoom',
+    'comparar remitly xoom',
+    'cual es mejor remitly o xoom',
+    'remitly o xoom mexico',
+    'diferencia remitly xoom',
+    'enviar dinero mexico remitly xoom',
+    'remitly vs xoom paypal',
+  ],
+  openGraph: {
+    title: 'Remitly vs Xoom México 2025',
+    description: 'Comparamos Remitly la app mejor calificada vs Xoom con respaldo PayPal para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function RemitlyVsXoomPage() {

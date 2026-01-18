@@ -6,7 +6,13 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a México desde Florida 2025 | Mejores Opciones',
   description: 'Guía completa para enviar dinero a México desde Florida. Compara Sendwave, Remitly, Félix Pago. Miami, Orlando, Tampa. Actualizado 2025.',
-  keywords: ['enviar dinero a mexico desde florida', 'remesas florida mexico', 'enviar dinero miami mexico', 'transferencias florida mexico'],
+  keywords: ['enviar dinero a mexico desde florida', 'remesas florida mexico', 'enviar dinero miami mexico', 'transferencias florida mexico', 'enviar dinero orlando mexico', 'remesas desde miami'],
+  openGraph: {
+    title: 'Enviar Dinero a México desde Florida 2025 | Mejores Opciones',
+    description: 'Guía completa para enviar dinero a México desde Florida. Compara Sendwave, Remitly, Félix Pago. Miami, Orlando, Tampa.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function DesdeFlorida() {

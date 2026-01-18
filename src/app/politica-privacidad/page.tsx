@@ -5,11 +5,32 @@ export const metadata: Metadata = {
   title: 'Política de Privacidad | EnviarDineroMexico.com',
   description:
     'Política de privacidad de EnviarDineroMexico.com. Cómo recopilamos, usamos y protegemos tu información.',
+  keywords: ['politica privacidad', 'privacidad datos', 'proteccion informacion', 'uso datos personales', 'cookies', 'GDPR CCPA'],
+  openGraph: {
+    title: 'Política de Privacidad | EnviarDineroMexico.com',
+    description: 'Política de privacidad de EnviarDineroMexico.com. Cómo recopilamos, usamos y protegemos tu información.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 export default function PoliticaPrivacidadPage() {
   return (
     <>
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Política de Privacidad', item: 'https://enviardineromexico.com/politica-privacidad/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-12">
         <div className="container-narrow">
           <nav className="text-sm mb-6">

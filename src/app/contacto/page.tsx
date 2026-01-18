@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: 'Contacto | EnviarDineroMexico.com',
   description:
     'Contáctanos para preguntas sobre comparación de servicios de remesas a México. Estamos aquí para ayudarte.',
+  keywords: ['contacto enviar dinero mexico', 'preguntas remesas', 'soporte envio dinero', 'ayuda transferencias mexico', 'contactar enviardineromexico', 'consultas remesas'],
+  openGraph: {
+    title: 'Contacto | EnviarDineroMexico.com',
+    description: 'Contáctanos para preguntas sobre comparación de servicios de remesas a México. Estamos aquí para ayudarte.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 export default function ContactoPage() {

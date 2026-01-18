@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Felix Pago vs Sendwave Mexico 2025 | Apps Sin Comision',
   description: 'Comparamos Felix Pago y Sendwave para enviar dinero a Mexico. Dos apps con $0 comision - cual es mejor para ti?',
   alternates: { canonical: '/comparar/felix-pago-vs-sendwave/' },
+  keywords: [
+    'felix pago vs sendwave',
+    'comparar felix pago sendwave',
+    'cual es mejor felix pago o sendwave',
+    'felix pago o sendwave mexico',
+    'apps sin comision enviar dinero mexico',
+    'diferencia felix pago sendwave',
+    'enviar dinero mexico sin comision',
+  ],
+  openGraph: {
+    title: 'Félix Pago vs Sendwave México 2025',
+    description: 'Comparamos dos apps con $0 comisión: Félix Pago y Sendwave para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function FelixPagoVsSendwavePage() {

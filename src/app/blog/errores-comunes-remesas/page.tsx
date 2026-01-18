@@ -2,9 +2,25 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '5 Errores Comunes al Enviar Dinero a México (y Cómo Evitarlos)',
+  title: '5 Errores Comunes al Enviar Dinero a México',
   description:
-    'Los errores más costosos que cometen los migrantes al enviar dinero a México. Aprende a evitarlos y ahorra cientos de dólares al año.',
+    'Los errores más costosos que cometen los migrantes al enviar dinero a México y cómo evitarlos. Aprende a ahorrar cientos de dólares al año en comisiones y tipo de cambio.',
+  keywords: [
+    'errores enviar dinero México',
+    'comisiones remesas',
+    'ahorrar en transferencias',
+    'consejos remesas México',
+    'evitar comisiones altas',
+    'mejores prácticas envío dinero',
+    'tipo de cambio remesas',
+  ],
+  openGraph: {
+    title: '5 Errores Comunes al Enviar Dinero a México',
+    description:
+      'Los errores más costosos que cometen los migrantes al enviar dinero a México y cómo evitarlos. Aprende a ahorrar cientos de dólares al año en comisiones y tipo de cambio.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function ErroresComunesPage() {

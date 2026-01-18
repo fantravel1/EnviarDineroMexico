@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   title: 'Comparar Servicios de Remesas a México | Todas las Opciones',
   description:
     'Compara Remitly vs Western Union, Sendwave vs Remitly, Félix Pago y más. Encuentra el servicio adecuado según tu monto y necesidades.',
+  keywords: [
+    'comparar servicios remesas mexico',
+    'comparacion envio dinero mexico',
+    'remitly vs western union mexico',
+    'mejor servicio remesas mexico',
+    'comparar apps enviar dinero',
+    'cual es mejor para enviar dinero a mexico',
+  ],
+  openGraph: {
+    title: 'Comparar Servicios de Remesas a México 2025',
+    description: 'Compara Remitly vs Western Union, Sendwave vs Remitly, Félix Pago y más. Encuentra el servicio adecuado según tu monto y necesidades.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 const comparisons = [

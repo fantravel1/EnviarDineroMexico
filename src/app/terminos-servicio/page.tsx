@@ -5,11 +5,32 @@ export const metadata: Metadata = {
   title: 'Términos de Servicio | EnviarDineroMexico.com',
   description:
     'Términos y condiciones de uso de EnviarDineroMexico.com. Aviso legal y descargo de responsabilidad.',
+  keywords: ['terminos de servicio', 'condiciones uso', 'aviso legal', 'descargo responsabilidad', 'terminos legales', 'condiciones envio dinero'],
+  openGraph: {
+    title: 'Términos de Servicio | EnviarDineroMexico.com',
+    description: 'Términos y condiciones de uso de EnviarDineroMexico.com. Aviso legal y descargo de responsabilidad.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 export default function TerminosServicioPage() {
   return (
     <>
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Términos de Servicio', item: 'https://enviardineromexico.com/terminos-servicio/' },
+            ],
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-12">
         <div className="container-narrow">
           <nav className="text-sm mb-6">

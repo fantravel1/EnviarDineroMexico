@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: 'Metodología | Cómo Evaluamos Servicios de Remesas',
   description:
     'Conoce cómo evaluamos y comparamos los servicios para enviar dinero a México. Nuestra metodología transparente y basada en datos.',
+  keywords: ['metodologia remesas', 'como evaluamos servicios', 'comparacion remesas', 'evaluacion servicios envio dinero', 'criterios comparacion remesas', 'analisis proveedores remesas'],
+  openGraph: {
+    title: 'Metodología | Cómo Evaluamos Servicios de Remesas',
+    description: 'Conoce cómo evaluamos y comparamos los servicios para enviar dinero a México. Nuestra metodología transparente.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 export default function MetodologiaPage() {
