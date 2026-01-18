@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Proveedores Confiables para Enviar Dinero a México | Guía 2025',
-  description: 'Descubre los proveedores más confiables para enviar dinero a México. Comparamos seguridad, regulaciones, calificaciones y garantías de cada servicio.',
+  title: 'Servicios Confiables para Enviar Dinero a México',
+  description: 'Descubre los proveedores más confiables para enviar dinero a México. Comparamos seguridad, regulaciones, calificaciones y garantías. Servicios verificados 2025.',
   keywords: [
     'proveedores confiables para enviar dinero a México',
     'servicios seguros para enviar dinero a mexico',
@@ -24,6 +24,20 @@ export default function ProveedoresConfiablesPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
       {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Proveedores Confiables', item: 'https://enviardineromexico.com/guias/proveedores-confiables/' },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

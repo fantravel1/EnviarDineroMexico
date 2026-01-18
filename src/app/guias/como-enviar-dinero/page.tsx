@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Cómo Enviar Dinero a México desde Estados Unidos | Guía Completa 2025',
-  description: 'Aprende cómo enviar dinero a México paso a paso. Compara las mejores opciones, comisiones, tiempos de entrega y requisitos para mandar dinero a tu familia.',
+  title: 'Cómo Enviar Dinero a México desde EE.UU. | Guía 2025',
+  description: 'Aprende cómo enviar dinero a México paso a paso. Compara las mejores opciones, comisiones, tiempos de entrega y requisitos. Guía completa 2025 con costos reales.',
   keywords: [
     'cómo enviar dinero a México',
     'como enviar dinero a mexico',

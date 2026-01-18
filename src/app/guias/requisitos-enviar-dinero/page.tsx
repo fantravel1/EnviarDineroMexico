@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: '¿Qué Necesito para Enviar Dinero a México? | Requisitos 2025',
-  description: 'Descubre qué documentos necesitas para enviar dinero a México. Requisitos de identificación, sin SSN, con matrícula consular y más.',
+  title: 'Requisitos para Enviar Dinero a México | 2025',
+  description: '¿Qué necesitas para enviar dinero a México? Requisitos de identificación, sin SSN, con matrícula consular y más. Guía con documentos necesarios 2025.',
   keywords: [
     'qué necesito para enviar dinero a México',
     'requisitos enviar dinero mexico',
@@ -25,6 +25,32 @@ export default function RequisitosPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
       {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Requisitos para Enviar Dinero a México',
+            description: 'Guía completa de requisitos y documentos para enviar dinero a México desde Estados Unidos',
+            author: { '@type': 'Organization', name: 'EnviarDineroMexico.com' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Requisitos', item: 'https://enviardineromexico.com/guias/requisitos-enviar-dinero/' },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Aplicaciones para Enviar Dinero a México | Las Mejores Apps 2025',
-  description: 'Las mejores aplicaciones para enviar dinero a México desde tu celular. Comparamos Sendwave, Remitly, Félix Pago, Wise y más.',
+  title: 'Apps para Enviar Dinero a México | Las Mejores 2025',
+  description: 'Las mejores aplicaciones para enviar dinero a México desde tu celular. Comparamos Sendwave, Remitly, Félix Pago, Wise y más. Ratings, costos y velocidad.',
   keywords: [
     'aplicaciones para enviar dinero a México',
     'apps para enviar dinero a mexico',
@@ -33,6 +33,71 @@ export default function AplicacionesPage() {
             headline: 'Aplicaciones para Enviar Dinero a México',
             description: 'Guía de las mejores apps para enviar dinero a México en 2025',
             author: { '@type': 'Organization', name: 'EnviarDineroMexico.com' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la app más barata para enviar dinero a México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sendwave es la app más barata con $0 comisión en todas las transferencias. Félix Pago ofrece la primera transferencia 100% gratis. Remitly tiene promociones frecuentes de $0 para depósitos bancarios.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la app más rápida para enviar dinero a México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Para depósito bancario, Sendwave y Félix Pago son instantáneos (minutos). Para cobro en efectivo, Remitly Express entrega en 10-30 minutos en más de 100,000 puntos en México.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál app tiene mejor tipo de cambio?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Wise ofrece el tipo de cambio medio del mercado (el más justo). Para montos grandes ($500+), Wise suele dar más pesos. Para montos pequeños, Sendwave con $0 comisión puede ser mejor opción.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Es seguro usar apps para enviar dinero a México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sí, las apps principales como Remitly, Sendwave y Wise son seguras. Están reguladas por FinCEN en EE.UU., usan encriptación bancaria, y tienen millones de usuarios con calificaciones 4.5+ estrellas en las tiendas de apps.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál app es mejor para principiantes?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Félix Pago es ideal para principiantes: funciona por WhatsApp (no necesita descargar app), la primera transferencia es gratis, y el proceso es muy simple. Remitly también es muy fácil de usar con excelente soporte en español.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Apps para Enviar Dinero', item: 'https://enviardineromexico.com/guias/aplicaciones-enviar-dinero/' },
+            ],
           }),
         }}
       />

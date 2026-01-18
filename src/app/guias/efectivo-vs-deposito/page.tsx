@@ -3,18 +3,20 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Enviar Dinero a México: Recogida en Efectivo vs Depósito Bancario | 2025',
-  description: 'Compara las opciones de cobro en efectivo vs depósito bancario para enviar dinero a México. Costos, velocidad, conveniencia y cuál te conviene.',
+  title: 'Efectivo vs Depósito Bancario para Enviar a México | 2025',
+  description: 'Compara cobro en efectivo vs depósito bancario para enviar dinero a México. Costos reales, velocidad, conveniencia y cuál te conviene según tu situación. Guía 2025.',
   keywords: [
     'enviar dinero a mexico efectivo vs deposito bancario',
     'cobro en efectivo o deposito mexico',
     'recogida en efectivo mexico',
     'deposito bancario remesas mexico',
     'mejor opcion enviar dinero mexico',
+    'diferencia efectivo deposito remesas',
+    'cual es mas barato efectivo o banco',
   ],
   openGraph: {
-    title: 'Efectivo vs Depósito Bancario: ¿Cuál es Mejor para Enviar a México?',
-    description: 'Comparativa completa de métodos de entrega para remesas a México.',
+    title: 'Efectivo vs Depósito Bancario: ¿Cuál es Mejor?',
+    description: 'Comparativa completa de métodos de entrega para remesas a México. Costos, velocidad y conveniencia.',
     type: 'article',
     locale: 'es_MX',
   },
@@ -23,6 +25,77 @@ export const metadata: Metadata = {
 export default function EfectivoVsDepositoPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Efectivo vs Depósito Bancario para Enviar Dinero a México',
+            description: 'Comparativa completa de métodos de entrega para remesas a México',
+            author: { '@type': 'Organization', name: 'EnviarDineroMexico.com' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Cuál es más barato: efectivo o depósito bancario?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'El depósito bancario es generalmente más barato. La comisión típica para depósito es $0-2.99, mientras que el cobro en efectivo cuesta $3.99-15. La diferencia anual puede ser de $60-100 si envías mensualmente.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál es más rápido: efectivo o depósito bancario?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'El depósito bancario suele ser más rápido, llegando en minutos de forma instantánea. El cobro en efectivo también puede ser rápido (minutos a horas), pero tu familia debe ir físicamente al punto de cobro.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Qué opción debo elegir si mi familia no tiene cuenta bancaria?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Si tu familia no tiene cuenta bancaria en México, el cobro en efectivo es tu única opción. Pueden recoger el dinero en Elektra, Oxxo, Coppel, Telecomm y miles de ubicaciones más solo con su INE/IFE.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Dónde puede cobrar mi familia en efectivo en México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Tu familia puede cobrar en efectivo en más de 100,000 puntos en México: Elektra, Oxxo (24/7), Coppel, Telecomm, Banco Azteca, Soriana, Bodega Aurrera, y muchos más. Remitly ofrece la mayor cobertura.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Efectivo vs Depósito', item: 'https://enviardineromexico.com/guias/efectivo-vs-deposito/' },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-blue-600 to-purple-600 text-white py-12">
         <div className="container mx-auto px-4">

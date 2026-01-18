@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Cuánto Cuesta Enviar Dinero a México | Guía de Costos 2025',
-  description: 'Descubre cuánto cuesta enviar dinero a México. Comparamos comisiones, tipos de cambio y costos totales de todos los servicios principales.',
+  title: 'Cuánto Cuesta Enviar Dinero a México | Costos 2025',
+  description: 'Descubre cuánto cuesta enviar dinero a México. Comparamos comisiones, tipos de cambio y costos totales de todos los servicios principales. Ejemplos reales 2025.',
   keywords: [
     'cuánto cuesta enviar dinero a México',
     'costo enviar dinero a mexico',
@@ -35,6 +35,20 @@ export default function CuantoCuestaPage() {
             headline: 'Cuánto Cuesta Enviar Dinero a México',
             description: 'Guía completa de costos para enviar dinero a México desde Estados Unidos',
             author: { '@type': 'Organization', name: 'EnviarDineroMexico.com' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Cuánto Cuesta Enviar Dinero', item: 'https://enviardineromexico.com/guias/cuanto-cuesta-enviar-dinero/' },
+            ],
           }),
         }}
       />

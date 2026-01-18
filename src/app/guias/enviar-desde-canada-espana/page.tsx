@@ -3,18 +3,20 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Enviar Dinero a México desde Canadá o España | Guía 2025',
-  description: 'Opciones para enviar dinero a México desde Canadá, España y otros países. Comparamos servicios, costos y mejores opciones internacionales.',
+  title: 'Enviar Dinero a México desde Canadá o España | 2025',
+  description: 'Opciones para enviar dinero a México desde Canadá, España y otros países. Comparamos Wise, Remitly y WorldRemit con costos y mejores opciones internacionales.',
   keywords: [
     'enviar dinero a mexico desde canada',
     'enviar dinero a mexico desde españa',
     'opciones enviar dinero mexico desde otro pais',
     'remesas a mexico desde europa',
     'transferir dinero a mexico desde canada',
+    'como enviar dinero de españa a mexico',
+    'remesas internacionales a mexico',
   ],
   openGraph: {
     title: 'Enviar Dinero a México desde Canadá, España y Otros Países',
-    description: 'Guía completa para enviar dinero a México desde diferentes países.',
+    description: 'Guía completa para enviar dinero a México desde diferentes países. Comparamos servicios y costos.',
     type: 'article',
     locale: 'es_MX',
   },
@@ -23,6 +25,77 @@ export const metadata: Metadata = {
 export default function EnviarDesdeOtroPaisPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Enviar Dinero a México desde Canadá, España y Otros Países',
+            description: 'Guía completa para enviar dinero a México desde diferentes países',
+            author: { '@type': 'Organization', name: 'EnviarDineroMexico.com' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la mejor forma de enviar dinero a México desde Canadá?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Wise es la mejor opción desde Canadá, ofreciendo el tipo de cambio real CAD a MXN con comisiones transparentes. Remitly es una buena alternativa con depósito bancario y cobro en efectivo disponibles.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la mejor forma de enviar dinero a México desde España?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Wise es la opción recomendada desde España, con tipo de cambio real EUR a MXN y muy popular en Europa por su transparencia. Remitly y WorldRemit también operan en España con buenas tasas.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Qué servicio funciona desde la mayoría de países?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Wise funciona desde más de 80 países con tipo de cambio real. Western Union también tiene cobertura global pero con costos más altos. WorldRemit es otra opción disponible en múltiples países.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Puedo enviar dinero DESDE México a otro país?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sí. Wise permite enviar desde México a muchos países con tipo de cambio real. Western Union está disponible en tiendas Elektra y Coppel. Los bancos mexicanos ofrecen transferencias SWIFT pero son más caras ($25-50+).',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Desde Canadá o España', item: 'https://enviardineromexico.com/guias/enviar-desde-canada-espana/' },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="bg-gradient-to-br from-indigo-600 to-blue-600 text-white py-12">
         <div className="container mx-auto px-4">

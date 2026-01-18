@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Enviar Dinero a México si el Receptor No Tiene Cuenta Bancaria | 2025',
-  description: 'Opciones para enviar dinero a México cuando tu familia no tiene cuenta bancaria. Cobro en efectivo en Elektra, Oxxo, Telecomm y más.',
+  title: 'Enviar Dinero sin Cuenta Bancaria en México | 2025',
+  description: 'Opciones para enviar dinero a México cuando tu familia no tiene cuenta bancaria. Cobro en efectivo en Elektra, Oxxo, Telecomm y más. Guía 2025.',
   keywords: [
     'enviar dinero a mexico sin cuenta bancaria',
     'opciones si receptor no tiene cuenta bancaria mexico',
@@ -24,6 +24,20 @@ export default function SinCuentaBancariaPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
       {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Sin Cuenta Bancaria', item: 'https://enviardineromexico.com/guias/sin-cuenta-bancaria/' },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

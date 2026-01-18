@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Envío de Dinero a México con Mejor Tasa de Cambio | Guía 2025',
-  description: 'Encuentra el mejor tipo de cambio para enviar dinero a México. Comparamos tasas de cambio de Wise, Remitly, Sendwave y más servicios.',
+  title: 'Mejor Tipo de Cambio para Enviar a México | 2025',
+  description: 'Encuentra el mejor tipo de cambio para enviar dinero a México. Comparamos tasas de Wise, Remitly, Sendwave y más servicios. Guía completa 2025.',
   keywords: [
     'envío de dinero a México con mejor tasa de cambio',
     'mejor tipo de cambio enviar dinero mexico',
@@ -25,6 +25,20 @@ export default function MejorTipoCambioPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
       {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Mejor Tipo de Cambio', item: 'https://enviardineromexico.com/guias/mejor-tipo-de-cambio/' },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

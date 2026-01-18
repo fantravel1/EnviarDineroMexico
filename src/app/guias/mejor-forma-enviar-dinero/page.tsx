@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Mejor Forma de Enviar Dinero a México desde Estados Unidos | 2025',
-  description: 'Descubre la mejor forma de enviar dinero a México desde USA. Comparamos apps, servicios online y tiendas físicas para encontrar la opción ideal para ti.',
+  title: 'Mejor Forma de Enviar Dinero a México | 2025',
+  description: 'Descubre la mejor forma de enviar dinero a México. Comparamos apps, servicios online y tiendas para encontrar la opción ideal para ti. Guía completa 2025.',
   keywords: [
     'mejor forma de enviar dinero a México desde Estados Unidos',
     'mejor manera de mandar dinero a mexico',
@@ -25,6 +25,20 @@ export default function MejorFormaPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
       {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Mejor Forma de Enviar Dinero', item: 'https://enviardineromexico.com/guias/mejor-forma-enviar-dinero/' },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

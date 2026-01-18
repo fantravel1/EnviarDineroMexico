@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Tiempo de Entrega de Envío de Dinero a México | Guía 2025',
-  description: 'Descubre cuánto tarda en llegar el dinero a México. Comparamos tiempos de entrega por servicio y método: depósito bancario vs efectivo.',
+  title: 'Tiempo de Entrega Envío Dinero a México | 2025',
+  description: '¿Cuánto tarda en llegar el dinero a México? Comparamos tiempos de entrega por servicio y método: depósito bancario vs efectivo. Guía 2025.',
   keywords: [
     'tiempo de entrega de envío de dinero a México',
     'cuanto tarda en llegar dinero a mexico',
@@ -25,6 +25,32 @@ export default function TiempoEntregaPage() {
   return (
     <main className="min-h-screen bg-neutral-bg">
       {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Tiempo de Entrega de Envío de Dinero a México',
+            description: 'Guía completa de tiempos de entrega para envíos a México desde Estados Unidos',
+            author: { '@type': 'Organization', name: 'EnviarDineroMexico.com' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Tiempo de Entrega', item: 'https://enviardineromexico.com/guias/tiempo-entrega-envio/' },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

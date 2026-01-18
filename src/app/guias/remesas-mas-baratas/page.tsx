@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 
 export const metadata: Metadata = {
-  title: 'Envío de Remesas a México Más Barato | Guía 2025',
-  description: 'Encuentra el envío de remesas a México más barato. Comparamos servicios, comisiones y tipos de cambio para que tu familia reciba más.',
+  title: 'Remesas a México Más Baratas | Comparativa 2025',
+  description: 'Encuentra el envío de remesas a México más barato. Comparamos servicios, comisiones y tipos de cambio. Sendwave $0, Félix Pago gratis, Remitly desde $0.',
   keywords: [
     'envío de remesas a México más barato',
     'remesas baratas a mexico',
@@ -34,6 +34,63 @@ export default function RemesasBaratasPage() {
             headline: 'Envío de Remesas a México Más Barato',
             description: 'Guía para encontrar las opciones más económicas para enviar remesas a México',
             author: { '@type': 'Organization', name: 'EnviarDineroMexico.com' },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Cuál es la remesa más barata a México?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sendwave ofrece $0 comisión en todas las transferencias a México para depósito bancario. Félix Pago tiene la primera transferencia 100% gratis. Remitly frecuentemente ofrece $0 para depósitos bancarios.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuánto puedo ahorrar usando servicios baratos?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Si envías $500 mensualmente, puedes ahorrar $60-100 al año usando Sendwave ($0) en lugar de Western Union ($8-12). En 5 años, eso son $300-500 extra para tu familia.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Qué servicio es mejor para remesas frecuentes?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Sendwave es ideal para envíos frecuentes porque siempre cobra $0 comisión. Si tu familia tiene cuenta bancaria, es la opción más económica. Si necesitan efectivo, Remitly con sus promociones frecuentes es buena opción.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cómo comparar el costo total de una remesa?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No solo mires la comisión. Compara cuántos pesos llegará a tu familia. Un servicio con $0 comisión pero mal tipo de cambio puede ser más caro que uno con $3 de comisión pero mejor tipo de cambio.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://enviardineromexico.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Guías', item: 'https://enviardineromexico.com/guias/' },
+              { '@type': 'ListItem', position: 3, name: 'Remesas Más Baratas', item: 'https://enviardineromexico.com/guias/remesas-mas-baratas/' },
+            ],
           }),
         }}
       />
