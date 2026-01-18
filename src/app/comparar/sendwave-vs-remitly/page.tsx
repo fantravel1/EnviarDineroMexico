@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Sendwave vs Remitly México 2025 | ¿Cuál es Mejor?',
   description:
     'Comparamos Sendwave y Remitly para enviar dinero a México. Cero comisiones vs mayor cobertura.',
+  keywords: [
+    'sendwave vs remitly',
+    'comparar sendwave remitly',
+    'cual es mejor sendwave o remitly',
+    'sendwave o remitly mexico',
+    'diferencia sendwave remitly',
+    'enviar dinero mexico sendwave remitly',
+    'sendwave vs remitly comisiones',
+  ],
+  openGraph: {
+    title: 'Sendwave vs Remitly México 2025',
+    description: 'Comparamos Sendwave con cero comisiones vs Remitly con mayor cobertura para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function SendwaveVsRemitlyPage() {

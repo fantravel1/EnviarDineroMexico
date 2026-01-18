@@ -5,7 +5,21 @@ import { AffiliateDisclosure } from '@/components/AffiliateDisclosure'
 export const metadata: Metadata = {
   title: 'Alternativas a Western Union 2025 | Opciones Más Baratas',
   description: 'Las mejores alternativas a Western Union para enviar dinero a México. Compara Sendwave, Remitly, Félix Pago y más. Ahorra hasta 50% en comisiones.',
-  keywords: ['alternativas western union', 'western union alternativas mexico', 'mejor que western union', 'enviar dinero barato mexico'],
+  keywords: [
+    'alternativas western union',
+    'alternativas a western union mexico',
+    'mejor que western union',
+    'enviar dinero barato mexico',
+    'opciones mas baratas que western union',
+    'reemplazo western union mexico',
+    'apps mas baratas que western union',
+  ],
+  openGraph: {
+    title: 'Alternativas a Western Union México 2025',
+    description: 'Las mejores alternativas a Western Union para enviar dinero a México. Ahorra hasta 50% en comisiones con Sendwave, Remitly y más.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function AlternativasWesternUnionPage() {

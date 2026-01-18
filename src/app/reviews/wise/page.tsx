@@ -8,7 +8,21 @@ const provider = providersBySlug['wise']
 export const metadata: Metadata = {
   title: 'Wise México 2025: Tipo de Cambio Real Sin Margen',
   description: 'Análisis completo de Wise (TransferWise) para enviar dinero a México. Tipo de cambio medio real, comisiones transparentes, pros y contras. Actualizado diciembre 2025.',
-  keywords: ['wise mexico', 'transferwise mexico', 'wise enviar dinero', 'wise tipo de cambio', 'wise comisiones'],
+  keywords: [
+    'wise mexico',
+    'transferwise mexico',
+    'wise enviar dinero',
+    'wise tipo de cambio',
+    'wise comisiones',
+    'wise transferencia',
+    'wise tarjeta multimoneda',
+  ],
+  openGraph: {
+    title: 'Wise Review 2025: Tipo de Cambio Real para México',
+    description: 'Análisis completo de Wise (antes TransferWise) para envíos a México. Tipo de cambio medio real sin margen oculto, comisiones transparentes y tarjeta multimoneda.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function WiseReviewPage() {

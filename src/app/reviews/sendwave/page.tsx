@@ -9,6 +9,21 @@ const provider = providersBySlug['sendwave']
 export const metadata: Metadata = {
   title: `${provider.name} Review 2025 | ¿Vale la Pena para México?`,
   description: provider.description,
+  keywords: [
+    'sendwave review',
+    'sendwave mexico',
+    'sendwave comisiones',
+    'sendwave enviar dinero',
+    'sendwave app',
+    'sendwave tipo de cambio',
+    'enviar dinero a mexico sendwave',
+  ],
+  openGraph: {
+    title: 'Sendwave Review 2025: Envía Dinero a México Sin Comisiones',
+    description: 'Análisis completo de Sendwave para envíos a México. Sin comisiones, app móvil fácil de usar, tipo de cambio competitivo. Descubre si es la mejor opción para ti.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function SendwaveReviewPage() {

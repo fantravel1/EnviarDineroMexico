@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     title: 'Cómo Enviar Dinero a México de Estados Unidos | Guía Completa 2025',
     description:
       'Guía completa: cómo enviar dinero a México, dónde mandar cerca de ti y cuánto puedes transferir por mes.',
+    type: 'article',
+    locale: 'es_MX',
   },
 }
 

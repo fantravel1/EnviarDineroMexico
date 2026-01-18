@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Remitly vs Western Union México 2025 | Comparación Completa',
   description:
     'Comparamos Remitly y Western Union para enviar dinero a México. Descubre cuál tiene mejores comisiones, tipo de cambio y velocidad.',
+  keywords: [
+    'remitly vs western union',
+    'comparar remitly western union',
+    'cual es mejor remitly o western union',
+    'remitly o western union mexico',
+    'diferencia remitly western union',
+    'enviar dinero mexico remitly western union',
+    'remitly vs western union comisiones',
+  ],
+  openGraph: {
+    title: 'Remitly vs Western Union México 2025',
+    description: 'Comparamos costos, velocidad y cobertura de Remitly y Western Union para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function RemitlyVsWesternUnionPage() {

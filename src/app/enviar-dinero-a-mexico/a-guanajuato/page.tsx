@@ -6,9 +6,15 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a Guanajuato 2025 | Guia Completa',
   description: 'Como enviar dinero a Guanajuato, Mexico. El tercer estado con mas remesas ($4.7B). Leon, Irapuato, Celaya, San Miguel de Allende. Mejores opciones.',
-  keywords: ['enviar dinero a guanajuato', 'remesas guanajuato', 'enviar dinero leon', 'transferencias guanajuato'],
+  keywords: ['enviar dinero a guanajuato', 'remesas guanajuato', 'enviar dinero leon', 'transferencias guanajuato', 'remesas a leon', 'enviar dinero irapuato'],
   alternates: {
     canonical: '/enviar-dinero-a-mexico/a-guanajuato/',
+  },
+  openGraph: {
+    title: 'Enviar Dinero a Guanajuato 2025 | Guia Completa',
+    description: 'Como enviar dinero a Guanajuato, Mexico. El tercer estado con mas remesas ($4.7B). Leon, Irapuato, Celaya.',
+    type: 'article',
+    locale: 'es_MX',
   },
 }
 

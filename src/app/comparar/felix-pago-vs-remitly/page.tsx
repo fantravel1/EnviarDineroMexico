@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Félix Pago vs Remitly México 2025 | WhatsApp vs App Tradicional',
   description:
     'Comparamos Félix Pago y Remitly. WhatsApp innovador contra la app más popular para remesas.',
+  keywords: [
+    'felix pago vs remitly',
+    'comparar felix pago remitly',
+    'cual es mejor felix pago o remitly',
+    'felix pago o remitly mexico',
+    'diferencia felix pago remitly',
+    'enviar dinero mexico whatsapp',
+    'enviar dinero mexico felix pago remitly',
+  ],
+  openGraph: {
+    title: 'Félix Pago vs Remitly México 2025',
+    description: 'Comparamos Félix Pago por WhatsApp vs Remitly la app más popular para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function FelixPagoVsRemitlyPage() {

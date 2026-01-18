@@ -6,7 +6,13 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a Jalisco 2025 | Guía Completa',
   description: 'Cómo enviar dinero a Jalisco, México. El segundo estado con más remesas ($5.2B). Guadalajara, Zapopan, Lagos de Moreno. Mejores opciones.',
-  keywords: ['enviar dinero a jalisco', 'remesas jalisco', 'enviar dinero guadalajara', 'transferencias jalisco'],
+  keywords: ['enviar dinero a jalisco', 'remesas jalisco', 'enviar dinero guadalajara', 'transferencias jalisco', 'remesas a guadalajara', 'enviar dinero zapopan'],
+  openGraph: {
+    title: 'Enviar Dinero a Jalisco 2025 | Guía Completa',
+    description: 'Cómo enviar dinero a Jalisco, México. El segundo estado con más remesas ($5.2B). Guadalajara, Zapopan, Lagos de Moreno.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function AJalisco() {

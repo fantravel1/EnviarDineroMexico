@@ -6,7 +6,13 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a México desde California 2025 | Mejores Opciones',
   description: 'Guía completa para enviar dinero a México desde California. Compara Sendwave, Remitly, Félix Pago. Los Angeles, San Diego, San Francisco. Actualizado 2025.',
-  keywords: ['enviar dinero a mexico desde california', 'remesas california mexico', 'enviar dinero los angeles mexico', 'transferencias california mexico'],
+  keywords: ['enviar dinero a mexico desde california', 'remesas california mexico', 'enviar dinero los angeles mexico', 'transferencias california mexico', 'enviar dinero san diego mexico', 'remesas desde los angeles'],
+  openGraph: {
+    title: 'Enviar Dinero a México desde California 2025 | Mejores Opciones',
+    description: 'Guía completa para enviar dinero a México desde California. Compara Sendwave, Remitly, Félix Pago. Los Angeles, San Diego, San Francisco.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function DesdeCalifornia() {

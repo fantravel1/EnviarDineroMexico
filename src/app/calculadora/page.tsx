@@ -3,9 +3,25 @@ import Link from 'next/link'
 import { ComparisonCalculator, AffiliateDisclosure } from '@/components'
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Remesas a México | Compara Costos en Tiempo Real',
+  title: 'Calculadora de Remesas a México | Compara Costos 2025',
   description:
-    'Calcula cuánto cuesta enviar dinero a México con diferentes proveedores. Compara Remitly, Sendwave, Félix Pago y más.',
+    'Calcula cuánto cuesta enviar dinero a México con diferentes proveedores. Compara Remitly, Sendwave, Félix Pago, Wise y más. Costos y tipo de cambio en tiempo real.',
+  keywords: [
+    'calculadora remesas mexico',
+    'cuanto cuesta enviar dinero a mexico',
+    'comparar costos envio dinero mexico',
+    'calculadora envio dinero mexico',
+    'comparar remitly sendwave wise',
+    'tipo de cambio remesas mexico',
+    'comisiones envio dinero mexico',
+  ],
+  openGraph: {
+    title: 'Calculadora de Remesas a México | Compara Costos',
+    description: 'Calcula y compara cuánto cuesta enviar dinero a México con los principales servicios.',
+    type: 'website',
+    locale: 'es_MX',
+    url: 'https://enviardineromexico.com/calculadora/',
+  },
 }
 
 export default function CalculadoraPage() {

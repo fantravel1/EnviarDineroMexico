@@ -8,7 +8,21 @@ const provider = providersBySlug['worldremit']
 export const metadata: Metadata = {
   title: 'WorldRemit Review 2025: Envía a 150+ Países | EnviarDineroMexico',
   description: 'Análisis completo de WorldRemit para enviar dinero a México. Apple Pay, Google Pay, 150+ países, pros y contras. Actualizado diciembre 2025.',
-  keywords: ['worldremit mexico', 'worldremit comisiones', 'worldremit enviar dinero', 'worldremit apple pay'],
+  keywords: [
+    'worldremit mexico',
+    'worldremit comisiones',
+    'worldremit enviar dinero',
+    'worldremit apple pay',
+    'worldremit google pay',
+    'worldremit tipo de cambio',
+    'worldremit referidos',
+  ],
+  openGraph: {
+    title: 'WorldRemit Review 2025: Envía Dinero a México con Apple Pay',
+    description: 'Análisis completo de WorldRemit para envíos a México. Compatible con Apple Pay y Google Pay, primera transferencia gratis, y programa de referidos generoso.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function WorldRemitReviewPage() {

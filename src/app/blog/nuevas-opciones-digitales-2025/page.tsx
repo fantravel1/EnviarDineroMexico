@@ -2,9 +2,25 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Nuevas Opciones Digitales para Remesas en 2025 | EnviarDineroMexico',
+  title: 'Nuevas Apps para Enviar Dinero a México 2025',
   description:
-    'Las apps y servicios más nuevos para enviar dinero a México en 2025. Comparación de características, costos y experiencia de usuario.',
+    'Las mejores apps y servicios digitales para enviar dinero a México en 2025. Comparación completa de características, costos, velocidad y experiencia de usuario.',
+  keywords: [
+    'apps enviar dinero México 2025',
+    'nuevas opciones remesas',
+    'servicios digitales transferencias',
+    'Félix Pago vs Wise',
+    'mejores apps remesas',
+    'fintech remesas México',
+    'envío instantáneo México',
+  ],
+  openGraph: {
+    title: 'Nuevas Apps para Enviar Dinero a México 2025',
+    description:
+      'Las mejores apps y servicios digitales para enviar dinero a México en 2025. Comparación completa de características, costos, velocidad y experiencia de usuario.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function NuevasOpcionesDigitalesPage() {

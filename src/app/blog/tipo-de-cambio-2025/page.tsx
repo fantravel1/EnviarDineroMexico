@@ -2,9 +2,25 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Tipo de Cambio Peso-Dólar 2025: Lo Que Debes Saber | EnviarDineroMexico',
+  title: 'Tipo de Cambio Peso-Dólar 2025: Guía Completa',
   description:
-    'Análisis del tipo de cambio peso-dólar para 2025. Aprende cuándo es mejor momento para enviar dinero y cómo maximizar tus remesas.',
+    'Análisis del tipo de cambio peso-dólar para 2025. Aprende cuándo es el mejor momento para enviar dinero a México y estrategias para maximizar tus remesas familiares.',
+  keywords: [
+    'tipo de cambio peso dólar 2025',
+    'cambio USD MXN hoy',
+    'mejor momento enviar remesas',
+    'maximizar remesas México',
+    'pronóstico peso mexicano',
+    'enviar dólares a México',
+    'tipo cambio remesas',
+  ],
+  openGraph: {
+    title: 'Tipo de Cambio Peso-Dólar 2025: Guía Completa',
+    description:
+      'Análisis del tipo de cambio peso-dólar para 2025. Aprende cuándo es el mejor momento para enviar dinero a México y estrategias para maximizar tus remesas familiares.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function TipoCambio2025Page() {

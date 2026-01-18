@@ -6,7 +6,13 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a Michoacán 2025 | Guía Completa',
   description: 'Cómo enviar dinero a Michoacán, México. El estado que más remesas recibe ($5.4B). Morelia, Uruapan, Zamora. Mejores opciones y costos.',
-  keywords: ['enviar dinero a michoacan', 'remesas michoacan', 'enviar dinero morelia', 'transferencias michoacan'],
+  keywords: ['enviar dinero a michoacan', 'remesas michoacan', 'enviar dinero morelia', 'transferencias michoacan', 'remesas a morelia', 'enviar dinero uruapan'],
+  openGraph: {
+    title: 'Enviar Dinero a Michoacán 2025 | Guía Completa',
+    description: 'Cómo enviar dinero a Michoacán, México. El estado que más remesas recibe ($5.4B). Morelia, Uruapan, Zamora.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function AMichoacan() {

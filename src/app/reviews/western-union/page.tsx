@@ -8,7 +8,21 @@ const provider = providersBySlug['western-union']
 export const metadata: Metadata = {
   title: 'Western Union México 2025 | 500K+ Ubicaciones',
   description: 'Análisis completo de Western Union para enviar dinero a México. 500,000+ ubicaciones, opciones de cobro en efectivo, pros y contras. Actualizado diciembre 2025.',
-  keywords: ['western union mexico', 'western union comisiones', 'western union enviar dinero', 'western union tipo de cambio'],
+  keywords: [
+    'western union mexico',
+    'western union comisiones',
+    'western union enviar dinero',
+    'western union tipo de cambio',
+    'western union ubicaciones',
+    'western union efectivo',
+    'western union cerca de mi',
+  ],
+  openGraph: {
+    title: 'Western Union México 2025: Review Completo y Ubicaciones',
+    description: 'Análisis de Western Union para envíos a México. Más de 500,000 ubicaciones de cobro, opciones en efectivo, comisiones y alternativas más económicas.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function WesternUnionReviewPage() {

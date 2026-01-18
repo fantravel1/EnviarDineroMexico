@@ -6,7 +6,13 @@ import { ComparisonCalculator } from '@/components/ComparisonCalculator'
 export const metadata: Metadata = {
   title: 'Enviar Dinero a Oaxaca 2025 | Guía Completa',
   description: 'Cómo enviar dinero a Oaxaca, México. Estado con alta migración indígena ($2.8B en remesas). Oaxaca ciudad, Valles Centrales, Sierra. Mejores opciones.',
-  keywords: ['enviar dinero a oaxaca', 'remesas oaxaca', 'enviar dinero oaxaca ciudad', 'transferencias oaxaca'],
+  keywords: ['enviar dinero a oaxaca', 'remesas oaxaca', 'enviar dinero oaxaca ciudad', 'transferencias oaxaca', 'remesas a oaxaca', 'enviar dinero valles centrales'],
+  openGraph: {
+    title: 'Enviar Dinero a Oaxaca 2025 | Guía Completa',
+    description: 'Cómo enviar dinero a Oaxaca, México. Estado con alta migración indígena ($2.8B en remesas). Oaxaca ciudad, Valles Centrales.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function AOaxaca() {

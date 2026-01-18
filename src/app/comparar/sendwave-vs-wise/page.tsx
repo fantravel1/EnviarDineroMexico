@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Sendwave vs Wise Mexico 2025 | Apps de Bajo Costo',
   description: 'Comparamos Sendwave y Wise para enviar dinero a Mexico. Cero comisiones vs tipo de cambio real - cual conviene mas?',
   alternates: { canonical: '/comparar/sendwave-vs-wise/' },
+  keywords: [
+    'sendwave vs wise',
+    'comparar sendwave wise',
+    'cual es mejor sendwave o wise',
+    'sendwave o wise mexico',
+    'sendwave vs transferwise',
+    'diferencia sendwave wise',
+    'enviar dinero mexico sendwave wise',
+  ],
+  openGraph: {
+    title: 'Sendwave vs Wise México 2025',
+    description: 'Comparamos cero comisiones de Sendwave vs tipo de cambio real de Wise para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function SendwaveVsWisePage() {

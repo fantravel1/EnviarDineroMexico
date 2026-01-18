@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Sendwave vs Western Union Mexico 2025 | Comparacion Completa',
   description: 'Comparamos Sendwave y Western Union para enviar dinero a Mexico. App moderna con $0 comision vs red tradicional con 500,000 ubicaciones.',
   alternates: { canonical: '/comparar/sendwave-vs-western-union/' },
+  keywords: [
+    'sendwave vs western union',
+    'comparar sendwave western union',
+    'cual es mejor sendwave o western union',
+    'sendwave o western union mexico',
+    'diferencia sendwave western union',
+    'enviar dinero mexico sendwave western union',
+    'sendwave vs western union comisiones',
+  ],
+  openGraph: {
+    title: 'Sendwave vs Western Union México 2025',
+    description: 'Comparamos $0 comisión de Sendwave vs la red de 500,000 ubicaciones de Western Union para enviar dinero a México.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function SendwaveVsWesternUnionPage() {

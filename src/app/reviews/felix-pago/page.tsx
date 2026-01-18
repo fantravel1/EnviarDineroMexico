@@ -9,6 +9,21 @@ const provider = providersBySlug['felix-pago']
 export const metadata: Metadata = {
   title: `${provider.name} Review 2025 | Envía Dinero por WhatsApp`,
   description: provider.description,
+  keywords: [
+    'felix pago review',
+    'felix pago mexico',
+    'felix pago whatsapp',
+    'enviar dinero por whatsapp',
+    'felix pago comisiones',
+    'transferencia gratis mexico',
+    'felix pago tipo de cambio',
+  ],
+  openGraph: {
+    title: 'Félix Pago Review 2025: Envía Dinero a México por WhatsApp',
+    description: 'Análisis completo de Félix Pago. Primera transferencia gratis, envía dinero por WhatsApp sin descargar apps. Descubre cómo funciona y sus ventajas.',
+    type: 'article',
+    locale: 'es_MX',
+  },
 }
 
 export default function FelixPagoReviewPage() {

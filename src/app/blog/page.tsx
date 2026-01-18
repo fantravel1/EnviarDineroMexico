@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Blog | Noticias y Consejos sobre Remesas a México',
   description:
     'Últimas noticias, consejos y actualizaciones sobre envío de dinero a México. Mantente informado sobre tipos de cambio, nuevos servicios y regulaciones.',
+  keywords: [
+    'blog remesas México',
+    'noticias envío dinero',
+    'consejos transferencias México',
+    'tipo de cambio peso dólar',
+    'remesas migrantes',
+    'guía enviar dinero México',
+  ],
+  openGraph: {
+    title: 'Blog | Noticias y Consejos sobre Remesas a México',
+    description:
+      'Últimas noticias, consejos y actualizaciones sobre envío de dinero a México. Mantente informado sobre tipos de cambio, nuevos servicios y regulaciones.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 const posts = [

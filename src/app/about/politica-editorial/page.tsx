@@ -5,6 +5,13 @@ export const metadata: Metadata = {
   title: 'Política Editorial | Estándares de Contenido',
   description:
     'Conoce nuestros estándares editoriales, política de afiliados y proceso de verificación de contenido.',
+  keywords: ['politica editorial', 'estandares contenido', 'politica afiliados', 'transparencia editorial', 'independencia editorial', 'verificacion contenido'],
+  openGraph: {
+    title: 'Política Editorial | Estándares de Contenido',
+    description: 'Conoce nuestros estándares editoriales, política de afiliados y proceso de verificación de contenido.',
+    type: 'website',
+    locale: 'es_MX',
+  },
 }
 
 export default function PoliticaEditorialPage() {
