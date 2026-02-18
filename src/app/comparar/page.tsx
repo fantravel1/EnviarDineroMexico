@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { ComparisonTable, AffiliateDisclosure } from '@/components'
+import { mexicanImages } from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'Comparar Servicios de Remesas a México | Todas las Opciones',
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     'cual es mejor para enviar dinero a mexico',
   ],
   openGraph: {
-    title: 'Comparar Servicios de Remesas a México 2025',
+    title: 'Comparar Servicios de Remesas a México 2026',
     description: 'Compara Remitly vs Western Union, Sendwave vs Remitly, Félix Pago y más. Encuentra el servicio adecuado según tu monto y necesidades.',
     type: 'website',
     locale: 'es_MX',
@@ -139,8 +140,10 @@ export default function CompararPage() {
           }),
         }}
       />
-      <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
-        <div className="container-wide">
+      <section className="hero-image-section">
+        <img src={mexicanImages.colorfulArchitecture.src(1920, 600)} alt="" role="presentation" className="hero-bg object-cover w-full h-full" />
+        <div className="hero-overlay" />
+        <div className="hero-content container-wide py-16 md:py-20">
           <nav className="text-sm mb-6">
             <ol className="flex items-center gap-2 text-trust-blue-200">
               <li><Link href="/" className="hover:text-white">Inicio</Link></li>
@@ -148,7 +151,7 @@ export default function CompararPage() {
               <li className="text-white">Comparar</li>
             </ol>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Comparar Servicios de Remesas
           </h1>
           <p className="text-xl text-trust-blue-100 max-w-2xl">

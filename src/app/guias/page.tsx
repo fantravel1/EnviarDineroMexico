@@ -1,8 +1,9 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { mexicanImages } from '@/data/images'
 
 export const metadata: Metadata = {
-  title: 'Cómo Enviar Dinero a México | Guías Completas 2025',
+  title: 'Cómo Enviar Dinero a México | Guías Completas 2026',
   description:
     'Aprende cómo enviar dinero a México desde Estados Unidos. Guías sobre costos, comisiones, tiempos de entrega, requisitos y las mejores opciones de envío.',
   keywords: [
@@ -240,8 +241,10 @@ export default function GuiasPage() {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
-        <div className="container-wide">
+      <section className="hero-image-section">
+        <img src={mexicanImages.warmGolden.src(1920, 600)} alt="" role="presentation" className="hero-bg object-cover w-full h-full" />
+        <div className="hero-overlay" />
+        <div className="hero-content container-wide py-16 md:py-20">
           <nav className="text-sm mb-6">
             <ol className="flex items-center gap-2 text-trust-blue-200">
               <li><Link href="/" className="hover:text-white">Inicio</Link></li>
@@ -249,7 +252,7 @@ export default function GuiasPage() {
               <li className="text-white">Guías</li>
             </ol>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Guías para Enviar Dinero a México
           </h1>
           <p className="text-xl text-trust-blue-100 max-w-2xl">

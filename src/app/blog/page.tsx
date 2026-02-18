@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { mexicanImages } from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'Blog | Noticias y Consejos sobre Remesas a México',
@@ -49,6 +50,12 @@ const posts = [
   },
 ]
 
+const postImages = [
+  mexicanImages.mexicanFood.src(600, 300),
+  mexicanImages.mexicanMarket.src(600, 300),
+  mexicanImages.celebration.src(600, 300),
+]
+
 export default function BlogPage() {
   return (
     <>
@@ -88,8 +95,10 @@ export default function BlogPage() {
           }),
         }}
       />
-      <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
-        <div className="container-wide">
+      <section className="hero-image-section">
+        <img src={mexicanImages.mexicanCulture.src(1920, 600)} alt="" role="presentation" className="hero-bg object-cover w-full h-full" />
+        <div className="hero-overlay" />
+        <div className="hero-content container-wide py-16 md:py-20">
           <nav className="text-sm mb-6">
             <ol className="flex items-center gap-2 text-trust-blue-200">
               <li>
@@ -101,7 +110,7 @@ export default function BlogPage() {
               <li className="text-white">Blog</li>
             </ol>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Blog de Remesas
           </h1>
           <p className="text-xl text-trust-blue-100 max-w-2xl">
@@ -114,11 +123,17 @@ export default function BlogPage() {
       <section className="section">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
+            {posts.map((post, index) => (
               <article
                 key={post.slug}
                 className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow"
               >
+                <img
+                  src={postImages[index]}
+                  alt=""
+                  role="presentation"
+                  className="h-48 object-cover w-full"
+                />
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-xs font-medium bg-trust-blue-100 text-trust-blue-700 px-2 py-1 rounded">
