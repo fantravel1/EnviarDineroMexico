@@ -16,24 +16,29 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  /* Better focus styles for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-trust-blue-500;
+  }
 }
 
 @layer components {
   /* Mobile-first touch-friendly buttons */
   .btn-primary {
     @apply inline-flex items-center justify-center px-6 py-3 min-h-touch
-           bg-trust-blue-600 text-white font-semibold rounded-lg
+           bg-trust-blue-600 text-white font-semibold rounded-xl
            hover:bg-trust-blue-700 active:bg-trust-blue-800
-           transition-colors duration-200
+           transition-all duration-200 hover:shadow-lg
            focus:outline-none focus:ring-2 focus:ring-trust-blue-500 focus:ring-offset-2;
   }
 
   .btn-secondary {
     @apply inline-flex items-center justify-center px-6 py-3 min-h-touch
-           bg-white text-trust-blue-600 font-semibold rounded-lg
+           bg-white text-trust-blue-600 font-semibold rounded-xl
            border-2 border-trust-blue-600
            hover:bg-trust-blue-50 active:bg-trust-blue-100
-           transition-colors duration-200
+           transition-all duration-200 hover:shadow-md
            focus:outline-none focus:ring-2 focus:ring-trust-blue-500 focus:ring-offset-2;
   }
 
@@ -49,11 +54,11 @@
 
   /* Card component */
   .card {
-    @apply bg-white rounded-xl shadow-md p-6;
+    @apply bg-white rounded-2xl shadow-md p-6 border border-neutral-100;
   }
 
   .card-hover {
-    @apply card hover:shadow-lg transition-shadow duration-200;
+    @apply card hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300;
   }
 
   /* Affiliate disclosure styling */
@@ -72,7 +77,7 @@
   }
 
   .comparison-table th {
-    @apply bg-trust-blue-600 text-white font-semibold p-4 first:rounded-tl-lg last:rounded-tr-lg;
+    @apply bg-trust-blue-600 text-white font-semibold p-4 first:rounded-tl-xl last:rounded-tr-xl;
   }
 
   .comparison-table td {
@@ -80,7 +85,7 @@
   }
 
   .comparison-table tr:hover td {
-    @apply bg-neutral-50;
+    @apply bg-trust-blue-50/50;
   }
 
   /* Provider card */
@@ -90,27 +95,28 @@
 
   /* Featured provider highlight */
   .featured-provider {
-    @apply relative border-2 border-warm-accent-500;
+    @apply relative border-2 border-warm-accent-500 ring-2 ring-warm-accent-200;
   }
 
   .featured-provider::before {
     content: 'Recomendado';
     @apply absolute -top-3 left-4 px-3 py-1
-           bg-warm-accent-500 text-white text-xs font-bold rounded-full;
+           bg-warm-accent-500 text-white text-xs font-bold rounded-full
+           shadow-sm;
   }
 
   /* Trust badge */
   .trust-badge {
     @apply inline-flex items-center gap-2 px-3 py-1.5
            bg-success-green-50 text-success-green-700
-           text-sm font-medium rounded-full;
+           text-sm font-medium rounded-full border border-success-green-200;
   }
 
   /* Input styling - mobile optimized */
   .input-field {
     @apply w-full px-4 py-3 min-h-touch
-           border-2 border-neutral-300 rounded-lg
-           text-lg
+           border-2 border-neutral-300 rounded-xl
+           text-lg bg-white
            focus:border-trust-blue-500 focus:ring-2 focus:ring-trust-blue-200
            focus:outline-none
            transition-colors duration-200;
@@ -132,12 +138,67 @@
   .container-wide {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  /* Hero section with image background */
+  .hero-image-section {
+    @apply relative overflow-hidden;
+  }
+
+  .hero-image-section .hero-bg {
+    @apply absolute inset-0 bg-cover bg-center bg-no-repeat;
+  }
+
+  .hero-image-section .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-br from-trust-blue-900/85 via-trust-blue-800/80 to-trust-blue-900/90;
+  }
+
+  .hero-image-section .hero-content {
+    @apply relative z-10;
+  }
+
+  /* Image card with overlay text - apply 'group' class directly on the element */
+  .image-card {
+    @apply relative rounded-2xl overflow-hidden;
+  }
+
+  .image-card img {
+    @apply w-full h-full object-cover transition-transform duration-500;
+  }
+
+  .image-card:hover img {
+    @apply scale-105;
+  }
+
+  .image-card .image-card-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent
+           flex flex-col justify-end p-6 transition-all duration-300;
+  }
+
+  /* Glass morphism card */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg;
+  }
+
+  /* Animated section divider */
+  .section-divider {
+    @apply w-20 h-1 bg-gradient-to-r from-trust-blue-600 to-success-green-600 rounded-full mx-auto;
+  }
+
+  /* Stat card */
+  .stat-card {
+    @apply text-center p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20;
+  }
 }
 
 @layer utilities {
   /* Mexican flag gradient - for decorative use */
   .mexican-gradient {
     background: linear-gradient(90deg, #006847 0%, #FFFFFF 50%, #CE1126 100%);
+  }
+
+  /* Subtle Mexican accent gradient */
+  .mexican-accent-gradient {
+    background: linear-gradient(135deg, #006847 0%, #1E40AF 50%, #CE1126 100%);
   }
 
   /* Text gradient */
@@ -153,5 +214,32 @@
   /* Thumb zone positioning */
   .thumb-zone {
     @apply fixed bottom-0 left-0 right-0 safe-bottom;
+  }
+
+  /* Image aspect ratios */
+  .aspect-hero {
+    aspect-ratio: 16 / 9;
+  }
+
+  .aspect-card {
+    aspect-ratio: 4 / 3;
+  }
+
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Stagger animation delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+
+  /* Scroll-driven fade in for sections */
+  .animate-on-scroll {
+    opacity: 0;
+    animation: fade-in-up 0.6s ease-out forwards;
   }
 }

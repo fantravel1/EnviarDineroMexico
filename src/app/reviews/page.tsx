@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import { ProviderCard } from '@/components'
 import { providers } from '@/data/providers'
+import { mexicanImages } from '@/data/images'
 
 export const metadata: Metadata = {
   title: 'Reviews de Servicios para Enviar Dinero a México',
@@ -48,8 +49,10 @@ export default function ReviewsPage() {
           }),
         }}
       />
-      <section className="bg-gradient-to-br from-trust-blue-600 to-trust-blue-800 text-white py-16">
-        <div className="container-wide">
+      <section className="hero-image-section">
+        <img src={mexicanImages.urbanMexico.src(1920, 600)} alt="" role="presentation" className="hero-bg object-cover w-full h-full" />
+        <div className="hero-overlay" />
+        <div className="hero-content container-wide py-16 md:py-20">
           <nav className="text-sm mb-6">
             <ol className="flex items-center gap-2 text-trust-blue-200">
               <li><Link href="/" className="hover:text-white">Inicio</Link></li>
@@ -57,7 +60,7 @@ export default function ReviewsPage() {
               <li className="text-white">Reviews</li>
             </ol>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Reviews de Servicios de Remesas
           </h1>
           <p className="text-xl text-trust-blue-100 max-w-2xl">
